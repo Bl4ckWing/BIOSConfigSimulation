@@ -71,3 +71,42 @@ body {
     color: var(--bios-white);
     text-decoration: underline;
 }
+
+/* SAVE DIALOG */
+.save-overlay {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    display: none; justify-content: center; align-items: center; z-index: 200;
+}
+.save-overlay.open { display: flex; }
+
+.save-box {
+    background-color: var(--bios-red);
+    color: var(--bios-yellow);
+    border: 3px double var(--bios-yellow);
+    padding: 15px 30px;
+    font-weight: bold;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.5);
+    text-align: center;
+    min-width: 300px;
+}
+
+.save-title { margin-bottom: 15px; }
+
+.save-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+.save-opt {
+    padding: 2px 5px;
+    cursor: pointer;
+    border: 1px solid transparent; /* Platzhalter um Springen zu vermeiden */
+}
+
+/* Der aktive Button wird "invertiert" dargestellt */
+.save-opt.active {
+    background-color: var(--bios-yellow);
+    color: var(--bios-red);
+}
