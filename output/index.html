@@ -97,6 +97,23 @@ body {
 }
 .modal-title { background: var(--bios-fg); color: var(--bios-bg); }
 .modal-option.selected { background-color: var(--bios-red); color: var(--bios-yellow); }
+
+
+.view-header-internal {
+    display: block;             /* War vorher evtl. hidden oder nicht existent */
+    color: var(--bios-yellow);
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--bios-fg); /* Trennlinie zum Menü */
+    text-transform: uppercase;
+}
+
+/* Optional: Den Hilfetext rechts etwas anpassen */
+.column-right strong {
+    color: var(--bios-white);
+    text-decoration: underline;
+}
     </style>
 </head>
 <body>
@@ -109,7 +126,8 @@ body {
 </div>
     <div class="main-content" id="mainContent">
     <div id="tab-view-0" class="view-container hidden">
-        <div class="view-header-internal">Settings: Main</div>
+        <div class="view-header-internal">Main</div>
+        
         <div class="view-content-wrapper" style="display:flex; width:100%;">
             <div class="column-left">
         <div class="menu-row" data-type="item" data-options="[&quot;13:37:00&quot;]">
@@ -123,14 +141,15 @@ body {
         </div>
         </div>
             <div class="column-right">
-                <p><strong>Help</strong></p>
-                <p><small>Specific help for Main...</small></p>
+                <p><strong>Item Help</strong></p>
+                <p><small>Menu Level: Main</small></p>
             </div>
         </div>
     </div>
     
-    <div id="view-5a6a585f" class="view-container hidden">
-        <div class="view-header-internal">Settings: CPU Configuration</div>
+    <div id="view-4c2e4b99" class="view-container hidden">
+        <div class="view-header-internal">Advanced > CPU Configuration</div>
+        
         <div class="view-content-wrapper" style="display:flex; width:100%;">
             <div class="column-left">
         <div class="menu-row" data-type="item" data-options="[&quot;[Enabled]&quot;, &quot;[Disabled]&quot;]">
@@ -144,17 +163,18 @@ body {
         </div>
         </div>
             <div class="column-right">
-                <p><strong>Help</strong></p>
-                <p><small>Specific help for CPU Configuration...</small></p>
+                <p><strong>Item Help</strong></p>
+                <p><small>Menu Level: Advanced > CPU Configuration</small></p>
             </div>
         </div>
     </div>
     
     <div id="tab-view-1" class="view-container hidden">
-        <div class="view-header-internal">Settings: Advanced</div>
+        <div class="view-header-internal">Advanced</div>
+        
         <div class="view-content-wrapper" style="display:flex; width:100%;">
             <div class="column-left">
-        <div class="menu-row" data-type="submenu" data-target="view-5a6a585f">
+        <div class="menu-row" data-type="submenu" data-target="view-4c2e4b99">
             <span class="item-label">CPU Configuration</span>
             <span class="item-value">► Press Enter</span>
         </div>
@@ -165,14 +185,15 @@ body {
         </div>
         </div>
             <div class="column-right">
-                <p><strong>Help</strong></p>
-                <p><small>Specific help for Advanced...</small></p>
+                <p><strong>Item Help</strong></p>
+                <p><small>Menu Level: Advanced</small></p>
             </div>
         </div>
     </div>
     
     <div id="tab-view-2" class="view-container hidden">
-        <div class="view-header-internal">Settings: Boot</div>
+        <div class="view-header-internal">Boot</div>
+        
         <div class="view-content-wrapper" style="display:flex; width:100%;">
             <div class="column-left">
         <div class="menu-row" data-type="item" data-options="[&quot;[Enabled]&quot;, &quot;[Disabled]&quot;]">
@@ -181,8 +202,8 @@ body {
         </div>
         </div>
             <div class="column-right">
-                <p><strong>Help</strong></p>
-                <p><small>Specific help for Boot...</small></p>
+                <p><strong>Item Help</strong></p>
+                <p><small>Menu Level: Boot</small></p>
             </div>
         </div>
     </div>

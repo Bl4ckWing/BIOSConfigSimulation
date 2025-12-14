@@ -56,3 +56,19 @@ body { background-color: #000; }
 }
 .modal-title { background: var(--bios-blue); color: white; }
 .modal-option.selected { background-color: var(--bios-blue); color: white; }
+
+
+.view-header-internal {
+    display: block;
+    color: var(--bios-blue);
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed var(--bios-blue);
+}
+
+/* Optional: Den Hilfetext rechts etwas anpassen */
+.column-right strong {
+    color: var(--bios-white);
+    text-decoration: underline;
+}
+

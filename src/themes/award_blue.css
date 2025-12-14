@@ -54,3 +54,20 @@ body {
 }
 .modal-title { background: var(--bios-fg); color: var(--bios-bg); }
 .modal-option.selected { background-color: var(--bios-red); color: var(--bios-yellow); }
+
+
+.view-header-internal {
+    display: block;             /* War vorher evtl. hidden oder nicht existent */
+    color: var(--bios-yellow);
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--bios-fg); /* Trennlinie zum Menü */
+    text-transform: uppercase;
+}
+
+/* Optional: Den Hilfetext rechts etwas anpassen */
+.column-right strong {
+    color: var(--bios-white);
+    text-decoration: underline;
+}

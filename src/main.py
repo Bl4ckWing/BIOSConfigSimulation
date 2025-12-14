@@ -17,13 +17,13 @@ def load_file(path):
         print(f"FEHLER: Datei nicht gefunden: {path}")
         exit(1)
 
-# Globale Liste für alle generierten Screens (Views)
+# Globale Variable
 all_views_html = ""
 
-def generate_items_html(items, parent_id):
+def generate_items_html(items, parent_id, current_path_string):
     """
-    Erstellt HTML für eine Liste von Items.
-    Wenn ein Item ein Submenü ist, wird rekursiv ein neuer View erstellt.
+    Erstellt HTML für Items und ruft rekursiv generate_view auf,
+    wobei der Pfad (Breadcrumb) erweitert wird.
     """
     global all_views_html
     rows_html = ""
@@ -33,18 +33,16 @@ def generate_items_html(items, parent_id):
         value = item.get("value", "")
         item_type = item.get("type", "item")
         
-        # Attribute für JS
         data_attrs = f'data-type="{item_type}"'
         
-        # Wenn es ein Submenü ist, erstellen wir einen neuen View dafür
         if item_type == "submenu":
             submenu_id = f"view-{uuid.uuid4().hex[:8]}"
             data_attrs += f' data-target="{submenu_id}"'
             
-            # REKURSION: Erstelle den HTML-Content für das Submenü
-            generate_view(submenu_id, item.get("items", []), parent_title=label)
+            # REKURSION: Pfad erweitern (z.B. "Advanced" -> "Advanced > CPU Config")
+            new_path = f"{current_path_string} > {label}"
+            generate_view(submenu_id, item.get("items", []), path_label=new_path)
         
-        # Options speichern wir direkt im DOM als JSON-String (einfacher für JS)
         if "options" in item:
             opts_json = json.dumps(item["options"]).replace('"', '&quot;')
             data_attrs += f' data-options="{opts_json}"'
@@ -57,23 +55,25 @@ def generate_items_html(items, parent_id):
         '''
     return rows_html
 
-def generate_view(view_id, items, parent_title=""):
+def generate_view(view_id, items, path_label=""):
     """
-    Erstellt einen kompletten 'Screen' (View) und fügt ihn der globalen Variable hinzu.
+    Erstellt einen Screen mit sichtbarer Überschrift (Breadcrumb).
     """
     global all_views_html
     
-    content_rows = generate_items_html(items, view_id)
+    # Hier übergeben wir den aktuellen Pfad an die Items-Funktion
+    content_rows = generate_items_html(items, view_id, path_label)
     
-    # Ein View ist standardmäßig versteckt (hidden)
+    # HTML Aufbau: Jetzt mit sichtbarem Header
     all_views_html += f'''
     <div id="{view_id}" class="view-container hidden">
-        <div class="view-header-internal">Settings: {parent_title}</div>
+        <div class="view-header-internal">{path_label}</div>
+        
         <div class="view-content-wrapper" style="display:flex; width:100%;">
             <div class="column-left">{content_rows}</div>
             <div class="column-right">
-                <p><strong>Help</strong></p>
-                <p><small>Specific help for {parent_title}...</small></p>
+                <p><strong>Item Help</strong></p>
+                <p><small>Menu Level: {path_label}</small></p>
             </div>
         </div>
     </div>
@@ -81,35 +81,27 @@ def generate_view(view_id, items, parent_title=""):
 
 def main():
     global all_views_html
-    print("--- BIOS HTML Generator (Recursive) ---")
+    print("--- BIOS HTML Generator (Breadcrumbs) ---")
     
     config = json.loads(load_file(CONFIG_PATH))
     
-    # Theme laden
     theme_name = config.get('theme', 'award_blue')
     theme_css = load_file(os.path.join(THEMES_DIR, f"{theme_name}.css"))
     template = load_file(TEMPLATE_PATH)
 
-    # 1. Navigation Tabs generieren
     nav_tabs_html = ""
     
-    # 2. Views generieren (für jeden Tab ein Haupt-View)
     for index, tab in enumerate(config['tabs']):
-        # Tab Navigation
         nav_tabs_html += f'<div class="nav-item" data-target="tab-view-{index}">{tab["name"]}</div>\n'
         
-        # Tab Inhalt (Rekursiver Startpunkt)
-        generate_view(f"tab-view-{index}", tab['items'], parent_title=tab['name'])
+        # Startpunkt der Rekursion: Pfad ist nur der Tab-Name
+        generate_view(f"tab-view-{index}", tab['items'], path_label=tab['name'])
 
-    # 3. Zusammenbauen
     final_html = template.replace("{TITLE}", config['title'])
     final_html = final_html.replace("{NAV_TABS}", nav_tabs_html)
-    # {TAB_CONTENT} wird jetzt durch ALLE Views (Tabs + Submenüs) ersetzt
     final_html = final_html.replace("{TAB_CONTENT}", all_views_html) 
     final_html = final_html.replace("{FOOTER}", config.get('footer_text', ''))
     final_html = final_html.replace("{THEME_CSS}", theme_css)
-    
-    # Config brauchen wir im JS kaum noch, da alles im DOM steht, aber title etc. ist nützlich
     final_html = final_html.replace("{JSON_DATA}", json.dumps({"title": config["title"]}))
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
