@@ -29,7 +29,7 @@ This tool generates standalone, single-file HTML "One-Pagers" that simulate clas
 /output
   bios_config.html # The generated result
 
-## 🚀 Usage
+### 🚀 Usage
 
 ### 1. Basic Generation
 Run the script without arguments to use the default `config/bios_config.json`:
