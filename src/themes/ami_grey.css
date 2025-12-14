@@ -1,0 +1,58 @@
+:root {
+    --bios-bg: #C0C0C0; /* Windows 95 Grau */
+    --bios-fg: #000000;
+    --bios-blue: #000080;
+    --bios-white: #FFFFFF;
+    --highlight: #000080;
+    --highlight-text: #FFFFFF;
+    --shadow: none;
+    --font-stack: 'Lucida Console', Monaco, monospace;
+    --border-style: 3px solid #000080; /* Blauer Rahmen */
+}
+
+body { background-color: #000; }
+
+.bios-container {
+    background-color: var(--bios-bg);
+    border: var(--border-style);
+    color: var(--bios-blue);
+    font-weight: bold;
+}
+
+.header {
+    background-color: var(--bios-blue);
+    color: var(--bios-white);
+    text-align: center;
+}
+
+.nav-bar {
+    background-color: var(--bios-bg);
+    border-bottom: 1px solid var(--bios-blue);
+}
+
+.nav-item.active {
+    background-color: var(--bios-bg);
+    border: 1px dotted var(--bios-blue);
+    color: var(--bios-blue);
+}
+
+.column-right { border-left: 1px solid var(--bios-blue); color: #000; font-style: italic; }
+.footer { border-top: 1px solid var(--bios-blue); background-color: var(--bios-bg); color: #000; }
+
+.menu-row { color: #000; }
+.menu-row.selected {
+    background-color: var(--highlight);
+    color: var(--highlight-text);
+}
+.menu-row.selected .item-value { color: var(--highlight-text); }
+.item-value { color: var(--bios-blue); }
+
+/* Modal Styles AMI */
+.modal-box {
+    background: var(--bios-bg);
+    border: 2px outset white;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    color: #000;
+}
+.modal-title { background: var(--bios-blue); color: white; }
+.modal-option.selected { background-color: var(--bios-blue); color: white; }

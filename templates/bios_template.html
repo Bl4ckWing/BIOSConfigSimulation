@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{TITLE}</title>
+    <style>
+        /* BASE STYLES (Layout Only) */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            user-select: none;
+            overflow: hidden;
+            font-family: var(--font-stack, monospace);
+        }
+        .bios-container {
+            width: 800px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .header { padding: 5px; font-weight: bold; text-align: center; }
+        .nav-bar { display: flex; justify-content: space-around; padding: 5px; }
+        .nav-item { padding: 2px 10px; cursor: pointer; }
+        .main-content { display: flex; flex: 1; padding: 20px; position: relative; }
+        .tab-pane-wrapper { display: none; width: 100%; display: flex; }
+        .tab-pane-wrapper.hidden { display: none !important; }
+        .column-left { width: 60%; padding-right: 15px; }
+        .column-right { width: 40%; padding-left: 15px; font-size: 0.9em; }
+        .menu-row { display: flex; justify-content: space-between; padding: 2px 5px; margin-bottom: 2px; cursor: pointer; }
+        .footer { padding: 8px; text-align: center; font-size: 0.85em; }
+
+        /* Modal Base */
+        .modal-overlay {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5); display: none;
+            justify-content: center; align-items: center; z-index: 100;
+        }
+        .modal-overlay.open { display: flex; }
+        .modal-box { padding: 10px; min-width: 300px; }
+        .modal-title { text-align: center; margin-bottom: 10px; padding: 2px; font-weight: bold; }
+        .modal-option { padding: 2px 10px; cursor: pointer; }
+
+        /* INJECTED THEME */
+        {THEME_CSS}
+    </style>
+</head>
+<body>
+
+<div class="bios-container">
+    <div class="header">{TITLE}</div>
+    <div class="nav-bar">{NAV_TABS}</div>
+    <div class="main-content">{TAB_CONTENT}</div>
+    <div class="footer">{FOOTER}</div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <div class="modal-title">Options</div>
+            <div id="modalOptionsList"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const config = {JSON_DATA};
+    let currentTab = 0;
+    let currentRow = 0;
+    let isModalOpen = false;
+    let modalSelection = 0;
+    let currentOptions = [];
+    const navItems = document.querySelectorAll('.nav-item');
+    const tabWrappers = document.querySelectorAll('.tab-pane-wrapper');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalList = document.getElementById('modalOptionsList');
+
+    function renderMain() {
+        navItems.forEach((t, i) => t.classList.toggle('active', i === currentTab));
+        tabWrappers.forEach((w, i) => {
+            if(i === currentTab) {
+                w.classList.remove('hidden');
+                const rows = w.querySelectorAll('.menu-row');
+                if(currentRow >= rows.length) currentRow = rows.length - 1;
+                if(currentRow < 0) currentRow = 0;
+                rows.forEach((r, ri) => r.classList.toggle('selected', ri === currentRow));
+            } else { w.classList.add('hidden'); }
+        });
+    }
+
+    function openModal() {
+        const activeTab = config.tabs[currentTab];
+        const activeItem = activeTab.items[currentRow];
+        if(!activeItem.options || activeItem.options.length === 0) return;
+        currentOptions = activeItem.options;
+        modalSelection = currentOptions.indexOf(activeItem.value);
+        if(modalSelection === -1) modalSelection = 0;
+        renderModal();
+        isModalOpen = true;
+        modalOverlay.classList.add('open');
+    }
+
+    function renderModal() {
+        modalList.innerHTML = '';
+        currentOptions.forEach((opt, index) => {
+            const div = document.createElement('div');
+            div.className = 'modal-option';
+            div.innerText = opt;
+            if(index === modalSelection) div.classList.add('selected');
+            modalList.appendChild(div);
+        });
+    }
+
+    function selectOption() {
+        const newValue = currentOptions[modalSelection];
+        config.tabs[currentTab].items[currentRow].value = newValue;
+        const activeWrapper = tabWrappers[currentTab];
+        const rows = activeWrapper.querySelectorAll('.menu-row');
+        rows[currentRow].querySelector('.item-value').innerText = newValue;
+        closeModal();
+    }
+
+    function closeModal() {
+        isModalOpen = false;
+        modalOverlay.classList.remove('open');
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if(isModalOpen) {
+            if(e.key === 'ArrowUp') { if(modalSelection > 0) modalSelection--; renderModal(); }
+            else if(e.key === 'ArrowDown') { if(modalSelection < currentOptions.length - 1) modalSelection++; renderModal(); }
+            else if(e.key === 'Enter') { selectOption(); }
+            else if(e.key === 'Escape') { closeModal(); }
+        } else {
+            const activeWrapper = tabWrappers[currentTab];
+            const rows = activeWrapper ? activeWrapper.querySelectorAll('.menu-row') : [];
+            if (e.key === 'ArrowRight') { currentTab = (currentTab + 1) % config.tabs.length; currentRow = 0; }
+            else if (e.key === 'ArrowLeft') { currentTab = (currentTab - 1 + config.tabs.length) % config.tabs.length; currentRow = 0; }
+            else if (e.key === 'ArrowDown') { if (currentRow < rows.length - 1) currentRow++; }
+            else if (e.key === 'ArrowUp') { if (currentRow > 0) currentRow--; }
+            else if (e.key === 'Enter') { openModal(); }
+        }
+        renderMain();
+    });
+    renderMain();
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+:root {
+    --bios-bg: #0000AA;
+    --bios-fg: #E0E0E0;
+    --bios-white: #FFFFFF;
+    --bios-red: #AA0000;
+    --bios-yellow: #FFFF55;
+    --shadow: 2px 2px 0px rgba(0,0,0,0.5);
+    --font-stack: 'Courier New', Courier, monospace;
+    --border-style: 4px double var(--bios-white);
+}
+
+body {
+    background-color: #111;
+    /* Scanlines */
+    background-image: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 2px, 3px 100%;
+}
+
+.bios-container {
+    background-color: var(--bios-bg);
+    border: var(--border-style);
+    box-shadow: 0 0 20px rgba(0,0,255,0.2);
+    color: var(--bios-fg);
+}
+
+.header {
+    background: linear-gradient(90deg, var(--bios-fg), #aaaaaa);
+    color: var(--bios-bg);
+}
+
+.nav-item.active {
+    background-color: var(--bios-red);
+    color: var(--bios-yellow);
+    box-shadow: var(--shadow);
+}
+
+.column-right { border-left: 2px solid var(--bios-white); }
+.nav-bar { border-bottom: 2px solid var(--bios-white); }
+.footer { border-top: 2px solid var(--bios-white); background-color: var(--bios-bg); }
+
+.menu-row.selected {
+    background-color: var(--bios-red);
+    color: var(--bios-yellow);
+}
+.menu-row.selected .item-value { color: var(--bios-yellow); }
+.item-value { color: var(--bios-yellow); }
+
+/* Modal Styles Award */
+.modal-box {
+    background: var(--bios-bg);
+    border: 2px solid var(--bios-white);
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.5);
+    color: var(--bios-white);
+}
+.modal-title { background: var(--bios-fg); color: var(--bios-bg); }
+.modal-option.selected { background-color: var(--bios-red); color: var(--bios-yellow); }
