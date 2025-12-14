@@ -17,7 +17,7 @@ This tool generates standalone, single-file HTML "One-Pagers" that simulate clas
 
 ## 🛠️ Project Structure
 
-```bash
+```text
 /src
   /themes          # CSS definitions (award_blue.css, ami_grey.css)
   main.py          # The generator script
@@ -28,7 +28,7 @@ This tool generates standalone, single-file HTML "One-Pagers" that simulate clas
   bios_template.html
 /output
   bios_config.html # The generated result
-
+```
 ### 🚀 Usage
 
 ### 1. Basic Generation
@@ -38,7 +38,7 @@ Run the script without arguments to use the default `config/bios_config.json`:
 python src/main.py
 ### 2. Custom Configuration
 You can pass any JSON file located in the `config/` folder as an argument:
-
+```
 ```bash
 python src/main.py my_custom_setup.json
 # Creates: output/my_custom_setup.html
@@ -47,7 +47,7 @@ python src/main.py my_custom_setup.json
 Show available commands:
 ```bash
 python src/main.py --help
-
+```
 ## 🎮 How to use the BIOS Simulator
 
 Once you open the generated HTML file in your browser:
@@ -94,7 +94,7 @@ Define your menu structure in `config/bios_config.json`.
     }
   ]
 }
-
+```
 ### Key Properties
 * **`theme`**: Choose between `"award_blue"` or `"ami_grey"`.
 * **`type`**: Set to `"submenu"` to create a nested menu. Add an `items` array inside it.
@@ -116,4 +116,3 @@ Define your menu structure in `config/bios_config.json`.
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a Pull Request.
 
----
