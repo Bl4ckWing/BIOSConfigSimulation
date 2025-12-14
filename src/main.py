@@ -1,15 +1,15 @@
 import json
 import os
 import uuid
+import argparse  # <-- NEU: Für Parameter-Verarbeitung
 
-# --- PFADE ---
+# --- KONSTANTE PFADE ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CONFIG_PATH = os.path.join(BASE_DIR, 'config', 'bios_config.json')
+# CONFIG_PATH und OUTPUT_PATH werden jetzt dynamisch in main() gesetzt
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates', 'bios_template.html')
 THEMES_DIR = os.path.join(BASE_DIR, 'src', 'themes')
-OUTPUT_PATH = os.path.join(BASE_DIR, 'output', 'index.html')
 
-# Globale Variable für den gesammelten HTML-Code aller Views
+# Globale Variable
 all_views_html = ""
 
 def load_file(path):
@@ -21,16 +21,11 @@ def load_file(path):
         exit(1)
 
 def generate_items_html(items, parent_id, current_path_string):
-    """
-    Erstellt HTML für Items. 
-    WICHTIG: Erzeugt Unique IDs und schreibt sie in das Config-Objekt zurück.
-    """
     global all_views_html
     rows_html = ""
     
     for item in items:
-        # 1. GENERIERE UNIQUE ID (falls noch nicht vorhanden)
-        # Wir schreiben das direkt in das item-Dict, damit es später im JSON dump landet.
+        # ID-Logik: Behalte existierende IDs (Import) oder erstelle neue
         if "id" not in item:
             item["id"] = f"item-{uuid.uuid4().hex[:8]}"
 
@@ -39,23 +34,15 @@ def generate_items_html(items, parent_id, current_path_string):
         item_type = item.get("type", "item")
         item_id = item["id"] 
         
-        # HTML Attribute für JS (Data Binding)
         data_attrs = f'data-type="{item_type}" data-id="{item_id}"'
         
-        # Fall: Submenü
         if item_type == "submenu":
             submenu_id = f"view-{uuid.uuid4().hex[:8]}"
             data_attrs += f' data-target="{submenu_id}"'
-            
-            # Pfad erweitern (Breadcrumb)
             new_path = f"{current_path_string} > {label}"
-            
-            # Rekursion: Submenü generieren
             generate_view(submenu_id, item.get("items", []), path_label=new_path)
         
-        # Fall: Item mit Optionen
         if "options" in item:
-            # Optionen als JSON-String im HTML speichern
             opts_json = json.dumps(item["options"]).replace('"', '&quot;')
             data_attrs += f' data-options="{opts_json}"'
 
@@ -68,11 +55,7 @@ def generate_items_html(items, parent_id, current_path_string):
     return rows_html
 
 def generate_view(view_id, items, path_label=""):
-    """
-    Erstellt einen kompletten Screen (View Container)
-    """
     global all_views_html
-    
     content_rows = generate_items_html(items, view_id, path_label)
     
     all_views_html += f'''
@@ -90,10 +73,31 @@ def generate_view(view_id, items, path_label=""):
 
 def main():
     global all_views_html
-    print("--- BIOS HTML Generator (Final Version) ---")
+    
+    # --- NEU: Argument Parser ---
+    parser = argparse.ArgumentParser(description="Generiere BIOS HTML One-Pager")
+    parser.add_argument(
+        "config_file", 
+        nargs="?",              # ? bedeutet: Parameter ist optional
+        default="bios_config.json", 
+        help="Name der JSON-Datei im config-Ordner (z.B. gaming.json)"
+    )
+    args = parser.parse_args()
+
+    # Dynamische Pfade basierend auf Argument
+    config_filename = args.config_file
+    config_path = os.path.join(BASE_DIR, 'config', config_filename)
+    
+    # Output Name ableiten (z.B. "config.json" -> "config.html")
+    output_filename = os.path.splitext(config_filename)[0] + ".html"
+    output_path = os.path.join(BASE_DIR, 'output', output_filename)
+
+    print(f"--- BIOS HTML Generator ---")
+    print(f"Input:  {config_filename}")
+    print(f"Output: {output_filename}")
     
     # 1. Config laden
-    config_str = load_file(CONFIG_PATH)
+    config_str = load_file(config_path)
     config = json.loads(config_str)
     
     # 2. Theme laden
@@ -103,7 +107,7 @@ def main():
         theme_css = load_file(theme_path)
     else:
         print(f"WARNUNG: Theme '{theme_name}' nicht gefunden. Nutze Fallback.")
-        theme_css = "" # Oder Standard CSS hier einfügen
+        theme_css = "" 
 
     # 3. Template laden
     template = load_file(TEMPLATE_PATH)
@@ -111,11 +115,11 @@ def main():
     # 4. HTML generieren
     nav_tabs_html = ""
     
+    # Globale Variable resetten (wichtig bei Mehrfachaufrufen, hier eher prophylaktisch)
+    all_views_html = ""
+    
     for index, tab in enumerate(config['tabs']):
-        # Navigation Tabs
         nav_tabs_html += f'<div class="nav-item" data-target="tab-view-{index}">{tab["name"]}</div>\n'
-        
-        # Startpunkt der Rekursion pro Tab
         generate_view(f"tab-view-{index}", tab['items'], path_label=tab['name'])
 
     # 5. Ersetzen
@@ -124,17 +128,14 @@ def main():
     final_html = final_html.replace("{TAB_CONTENT}", all_views_html) 
     final_html = final_html.replace("{FOOTER}", config.get('footer_text', ''))
     final_html = final_html.replace("{THEME_CSS}", theme_css)
-    
-    # WICHTIG: Das Config-Objekt wird JETZT erst in JS injiziert, 
-    # nachdem generate_items_html die IDs hinzugefügt hat!
     final_html = final_html.replace("{JSON_DATA}", json.dumps(config))
 
     # 6. Speichern
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
         f.write(final_html)
 
-    print(f"ERFOLG: One-Pager erstellt unter: {OUTPUT_PATH}")
+    print(f"ERFOLG: Datei erstellt unter: {output_path}")
 
 if __name__ == "__main__":
     main()
