@@ -108,11 +108,11 @@
 <script>
     // --- BIOS SYSTEM CORE ---
     const BIOS = {
-        data: {JSON_DATA}, // Data from Python
-        idMap: {},         // Fast ID lookup
+        data: {JSON_DATA}, 
+        idMap: {},         
         state: {
             tabIndex: 0,
-            viewStack: [], // For Submenus
+            viewStack: [],
             currentViewId: null,
             rowIndex: 0,
             modalOpen: false,
@@ -145,19 +145,17 @@
             if(index >= tabs.length) index = 0;
 
             this.state.tabIndex = index;
-            this.state.viewStack = []; // Reset submenus
+            this.state.viewStack = []; 
             
-            // UI Update
             tabs.forEach((t, i) => t.classList.toggle('active', i === index));
-            const targetId = tabs[index].getAttribute('data-target');
+            
+            // SONARCUBE FIX: Dataset statt getAttribute
+            const targetId = tabs[index].dataset.target;
             this.activateView(targetId);
         },
 
         activateView(viewId) {
-            // Hide all views
             document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
-            
-            // Show target
             const target = document.getElementById(viewId);
             if(target) {
                 target.classList.add('active');
@@ -171,14 +169,13 @@
             const view = document.getElementById(this.state.currentViewId);
             const rows = view.querySelectorAll('.menu-row');
             
-            // Bounds check
             if (this.state.rowIndex >= rows.length) this.state.rowIndex = rows.length - 1;
             if (this.state.rowIndex < 0) this.state.rowIndex = 0;
 
             rows.forEach((r, i) => r.classList.toggle('selected', i === this.state.rowIndex));
             
-            // Update Help Text (Optional)
-            const helpText = rows[this.state.rowIndex]?.getAttribute('data-help') || "";
+            // SONARCUBE FIX: Dataset statt getAttribute
+            const helpText = rows[this.state.rowIndex]?.dataset.help || "";
             const helpContainer = view.querySelector('.col-help');
             if(helpContainer) helpContainer.innerText = helpText;
         },
@@ -189,15 +186,16 @@
             const row = view.querySelectorAll('.menu-row')[this.state.rowIndex];
             if(!row) return;
 
-            const type = row.getAttribute('data-type');
+            // SONARCUBE FIX: Dataset Zugriff (camelCase automatisch)
+            const type = row.dataset.type;
             
             if (type === 'submenu') {
-                const target = row.getAttribute('data-target');
+                const target = row.dataset.target;
                 this.state.viewStack.push({ vid: this.state.currentViewId, r: this.state.rowIndex });
                 this.activateView(target);
             } 
             else if (type === 'select') {
-                const opts = JSON.parse(row.getAttribute('data-options') || "[]");
+                const opts = JSON.parse(row.dataset.options || "[]");
                 if(opts.length === 0) return;
                 
                 this.state.activeRowElement = row;
@@ -224,8 +222,7 @@
         // --- MODALS ---
         toggleModal(show) {
             this.state.modalOpen = show;
-            const overlay = document.getElementById('optOverlay');
-            overlay.classList.toggle('open', show);
+            document.getElementById('optOverlay').classList.toggle('open', show);
             
             if(show) {
                 const list = document.getElementById('optList');
@@ -241,6 +238,9 @@
 
         updateModalSelection(dir) {
             const rows = document.querySelectorAll('.opt-row');
+            // Safety check
+            if (!rows.length) return;
+
             rows[this.state.modalIndex].classList.remove('selected');
             
             this.state.modalIndex += dir;
@@ -252,10 +252,10 @@
 
         commitModalSelection() {
             const val = this.state.modalOptions[this.state.modalIndex];
-            // Update UI
             this.state.activeRowElement.querySelector('.item-value').innerText = val;
-            // Update Data
-            const id = this.state.activeRowElement.getAttribute('data-id');
+            
+            // SONARCUBE FIX: Dataset
+            const id = this.state.activeRowElement.dataset.id;
             if(this.idMap[id]) this.idMap[id].value = val;
             
             this.toggleModal(false);
@@ -264,7 +264,7 @@
         // --- SAVE DIALOG ---
         toggleSaveDialog(show) {
             this.state.saveOpen = show;
-            this.state.saveYes = false; // default to No
+            this.state.saveYes = false; 
             document.getElementById('saveOverlay').classList.toggle('open', show);
             this.renderSaveToggle();
         },
@@ -277,61 +277,57 @@
         },
 
         saveAndExit() {
-            // 1. Download JSON
             const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(this.data, null, 2));
             const dl = document.createElement('a');
             dl.href = dataStr; dl.download = "bios_config.json";
             dl.click();
 
-            // 2. Reboot Effect
             document.getElementById('saveOverlay').classList.remove('open');
             document.getElementById('blackout').style.display = 'block';
             setTimeout(() => location.reload(), 1500);
         },
 
-        // --- INPUT HANDLING ---
+        // --- INPUT HANDLING (REFACTORED) ---
         setupInput() {
+            // SONARCUBE FIX: Komplexität reduziert durch Dispatcher
             document.addEventListener('keydown', (e) => {
-                const s = this.state;
-
-                // 1. INPUT: Modal Open
-                if (s.modalOpen) {
-                    if (e.key === 'ArrowUp') this.updateModalSelection(-1);
-                    if (e.key === 'ArrowDown') this.updateModalSelection(1);
-                    if (e.key === 'Enter') this.commitModalSelection();
-                    if (e.key === 'Escape') this.toggleModal(false);
-                    return;
-                }
-
-                // 2. INPUT: Save Dialog
-                if (s.saveOpen) {
-                    if (['ArrowLeft','ArrowRight','y','n'].includes(e.key.toLowerCase())) {
-                        s.saveYes = !s.saveYes;
-                        if(e.key.toLowerCase() === 'y') s.saveYes = true;
-                        if(e.key.toLowerCase() === 'n') s.saveYes = false;
-                        this.renderSaveToggle();
-                    }
-                    if (e.key === 'Enter') {
-                        if(s.saveYes) this.saveAndExit();
-                        else this.toggleSaveDialog(false);
-                    }
-                    if (e.key === 'Escape') this.toggleSaveDialog(false);
-                    return;
-                }
-
-                // 3. INPUT: Main Menu
-                if (e.key === 'ArrowRight' && s.viewStack.length === 0) this.switchTab(s.tabIndex + 1);
-                else if (e.key === 'ArrowLeft' && s.viewStack.length === 0) this.switchTab(s.tabIndex - 1);
-                else if (e.key === 'ArrowDown') { s.rowIndex++; this.renderRowSelection(); }
-                else if (e.key === 'ArrowUp') { s.rowIndex--; this.renderRowSelection(); }
-                else if (e.key === 'Enter') this.handleEnter();
-                else if (e.key === 'Escape') this.goBack();
-                else if (e.key === 'F10') this.toggleSaveDialog(true);
+                if (this.state.modalOpen) return this.handleModalInput(e);
+                if (this.state.saveOpen) return this.handleSaveInput(e);
+                this.handleMenuInput(e);
             });
+        },
+
+        handleModalInput(e) {
+            if (e.key === 'ArrowUp') this.updateModalSelection(-1);
+            else if (e.key === 'ArrowDown') this.updateModalSelection(1);
+            else if (e.key === 'Enter') this.commitModalSelection();
+            else if (e.key === 'Escape') this.toggleModal(false);
+        },
+
+        handleSaveInput(e) {
+            const key = e.key.toLowerCase();
+            if (['arrowleft','arrowright','y','n'].includes(key)) {
+                this.state.saveYes = (key === 'y' || (key !== 'n' && !this.state.saveYes));
+                this.renderSaveToggle();
+            }
+            else if (e.key === 'Enter') {
+                this.state.saveYes ? this.saveAndExit() : this.toggleSaveDialog(false);
+            }
+            else if (e.key === 'Escape') this.toggleSaveDialog(false);
+        },
+
+        handleMenuInput(e) {
+            const s = this.state;
+            if (e.key === 'ArrowRight' && s.viewStack.length === 0) this.switchTab(s.tabIndex + 1);
+            else if (e.key === 'ArrowLeft' && s.viewStack.length === 0) this.switchTab(s.tabIndex - 1);
+            else if (e.key === 'ArrowDown') { s.rowIndex++; this.renderRowSelection(); }
+            else if (e.key === 'ArrowUp') { s.rowIndex--; this.renderRowSelection(); }
+            else if (e.key === 'Enter') this.handleEnter();
+            else if (e.key === 'Escape') this.goBack();
+            else if (e.key === 'F10') this.toggleSaveDialog(true);
         }
     };
 
-    // START
     BIOS.init();
 </script>
 </body>
