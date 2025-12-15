@@ -8,7 +8,7 @@ Thumbs.db
 .idea/
 
 # --- Tools (Do not commit binaries) ---
-/tools/*.exe
+#/tools/*.exe I need them
 /tools/*.zip
 /tools/*.dmg
 /tools/*.app

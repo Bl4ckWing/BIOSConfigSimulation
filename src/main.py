@@ -27,7 +27,7 @@ class BiosHtmlGenerator:
     def generate(self, config):
         """Hauptmethode zum Erstellen des HTMLs."""
         # 1. Theme laden
-        theme_name = config.get('theme', 'award_blue')
+        theme_name = config.get('theme', 'ami_grey')
         theme_css = self._load_theme(theme_name)
 
         # 2. Template laden

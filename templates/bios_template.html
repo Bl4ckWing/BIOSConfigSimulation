@@ -4,306 +4,335 @@
     <meta charset="UTF-8">
     <title>{TITLE}</title>
     <style>
-        /* --- BASE LAYOUT --- */
-        body {
-            display: flex; justify-content: center; align-items: center;
-            height: 100vh; margin: 0; user-select: none; overflow: hidden;
-            font-family: var(--font-stack, monospace);
-        }
-        .bios-container {
-            width: 800px; height: 600px; display: flex; flex-direction: column; position: relative;
-        }
-        .header { padding: 5px; font-weight: bold; text-align: center; }
-        .nav-bar { display: flex; justify-content: space-around; padding: 5px; }
-        .nav-item { padding: 2px 10px; cursor: pointer; }
-        .main-content { display: flex; flex: 1; padding: 20px; position: relative; }
+        /* --- CORE VARIABLES & RESET --- */
+        :root { --bg-color: #0000aa; --text-color: #ffffff; --highlight: #ffff00; --modal-bg: #c0c0c0; --modal-text: #000; }
+        * { box-sizing: border-box; }
         
-        /* Views & Helper */
-        .view-container { width: 100%; display: flex; flex-direction: column; }
-        .view-container.hidden { display: none !important; }
-        .column-left { width: 60%; padding-right: 15px; }
-        .column-right { width: 40%; padding-left: 15px; font-size: 0.9em; }
-        .menu-row { display: flex; justify-content: space-between; padding: 2px 5px; margin-bottom: 2px; }
-        .footer { padding: 8px; text-align: center; font-size: 0.85em; }
+        body {
+            margin: 0; height: 100vh; overflow: hidden;
+            display: flex; justify-content: center; align-items: center;
+            background: #000; color: var(--text-color);
+            font-family: 'Courier New', monospace; user-select: none;
+        }
 
-        /* Overlays (Modal & Save) */
+        /* --- BIOS CONTAINER --- */
+        .bios-app {
+            width: 800px; height: 600px;
+            display: flex; flex-direction: column;
+            border: 2px solid #fff; /* Fallback frame */
+            position: relative;
+            background: var(--bg-color);
+        }
+
+        /* --- LAYOUT SECTIONS --- */
+        .header { text-align: center; padding: 10px; font-weight: bold; background: rgba(0,0,0,0.1); }
+        .nav-bar { display: flex; justify-content: space-around; padding: 5px 0; border-bottom: 1px solid #fff; }
+        .nav-item { padding: 4px 15px; cursor: pointer; }
+        .nav-item.active { background: var(--text-color); color: var(--bg-color); }
+        
+        .content-area { flex: 1; position: relative; padding: 20px; display: flex; }
+        .view-section { width: 100%; display: none; flex-direction: row; } /* Hidden by default */
+        .view-section.active { display: flex; }
+        
+        /* COLUMNS */
+        .col-items { width: 65%; padding-right: 20px; border-right: 1px solid #fff; }
+        .col-help { width: 35%; padding-left: 20px; font-size: 0.85em; color: var(--highlight); opacity: 0.8; }
+
+        /* LIST ITEMS */
+        .menu-row { display: flex; justify-content: space-between; padding: 2px 5px; cursor: pointer; }
+        .menu-row.selected { background: var(--text-color); color: var(--bg-color); }
+        .item-label { font-weight: bold; }
+
+        .footer { padding: 8px; text-align: center; border-top: 1px solid #fff; font-size: 0.8em; }
+
+        /* --- MODALS & OVERLAYS --- */
         .overlay {
-            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.5); display: none;
-            justify-content: center; align-items: center; z-index: 100;
+            position: absolute; inset: 0; background: rgba(0,0,0,0.6);
+            display: none; justify-content: center; align-items: center; z-index: 100;
         }
         .overlay.open { display: flex; }
-        
-        /* Reboot Screen (Blackout) */
-        #rebootScreen {
-            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-            background: black; z-index: 9999; display: none;
-            color: white; font-family: monospace; align-items: center; justify-content: center; font-size: 1.5em;
-        }
 
-        /* INJECTED THEME CSS */
+        .dialog-box {
+            background: var(--modal-bg); color: var(--modal-text);
+            padding: 4px; border: 2px solid #fff;
+            min-width: 300px; box-shadow: 10px 10px 0 #000;
+        }
+        .dialog-title { background: #fff; color: #000; text-align: center; font-weight: bold; margin-bottom: 5px; padding: 2px; }
+        .dialog-content { padding: 10px; text-align: center; }
+
+        .opt-row { padding: 2px 10px; text-align: left; cursor: pointer; }
+        .opt-row.selected { background: #000; color: #fff; }
+
+        .btn-group span { margin: 0 10px; font-weight: bold; cursor: pointer; }
+        .btn-group span.active { text-decoration: underline; color: red; }
+
+        /* REBOOT BLACKOUT */
+        #blackout { position: fixed; inset: 0; background: #000; z-index: 999; display: none; }
+
+        /* INJECTED THEME */
         {THEME_CSS}
     </style>
 </head>
 <body>
 
-<div id="rebootScreen">REBOOTING SYSTEM...</div>
+<div id="blackout"></div>
 
-<div class="bios-container">
+<div class="bios-app">
     <div class="header">{TITLE}</div>
-    <div class="nav-bar" id="navBar">{NAV_TABS}</div>
-    <div class="main-content" id="mainContent">{TAB_CONTENT}</div>
+    <div class="nav-bar" id="navContainer">{NAV_TABS}</div>
+    
+    <div class="content-area" id="mainContainer">
+        {TAB_CONTENT}
+    </div>
+
     <div class="footer">{FOOTER}</div>
 
-    <div class="overlay" id="modalOverlay">
-        <div class="modal-box">
-            <div class="modal-title">Options</div>
-            <div id="modalOptionsList"></div>
+    <div class="overlay" id="optOverlay">
+        <div class="dialog-box">
+            <div class="dialog-title">Item Options</div>
+            <div id="optList"></div>
         </div>
     </div>
 
-    <div class="save-overlay" id="saveOverlay">
-        <div class="save-box">
-            <div class="save-title">SAVE TO CMOS AND EXIT (Y/N)?</div>
-            <div class="save-controls">
-                <span id="btn-y" class="save-opt">[ Y ]</span>
-                <span>/</span>
-                <span id="btn-n" class="save-opt active">[ N ]</span>
+    <div class="overlay" id="saveOverlay">
+        <div class="dialog-box" style="background: red; color: white; border-color: white;">
+            <div class="dialog-title" style="background:red; color:white;">SAVE & EXIT?</div>
+            <div class="dialog-content btn-group">
+                <span id="btnY">[ Y ] Yes</span>
+                <span id="btnN" class="active">[ N ] No</span>
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    // --- DATA & STATE ---
-    const config = {JSON_DATA}; // Live-Daten aus Python (mit IDs)
-    const idMap = {};           // Schneller Zugriff: ID -> Objekt Referenz
+    // --- BIOS SYSTEM CORE ---
+    const BIOS = {
+        data: {JSON_DATA}, // Data from Python
+        idMap: {},         // Fast ID lookup
+        state: {
+            tabIndex: 0,
+            viewStack: [], // For Submenus
+            currentViewId: null,
+            rowIndex: 0,
+            modalOpen: false,
+            saveOpen: false,
+            saveYes: false,
+            modalOptions: [],
+            modalIndex: 0,
+            activeRowElement: null
+        },
+        
+        // --- INITIALIZATION ---
+        init() {
+            this.mapData(this.data.tabs);
+            this.switchTab(0);
+            this.setupInput();
+        },
 
-    // Navigation State
-    let currentTab = 0;
-    let currentRow = 0;
-    let viewStack = [];       
-    let currentViewId = "";   
+        mapData(items) {
+            if(!items) return;
+            items.forEach(i => {
+                if(i.id) this.idMap[i.id] = i;
+                if(i.items) this.mapData(i.items);
+            });
+        },
 
-    // UI States
-    let isModalOpen = false;
-    let isSaveDialogOpen = false;
-    let saveChoiceIsYes = false;
+        // --- NAVIGATION ---
+        switchTab(index) {
+            const tabs = document.querySelectorAll('.nav-item');
+            if(index < 0) index = tabs.length - 1;
+            if(index >= tabs.length) index = 0;
 
-    // Helper vars
-    let modalSelection = 0;
-    let currentOptions = [];
-    let currentTargetRow = null; 
-    const navItems = document.querySelectorAll('.nav-item');
-    
-    // --- INITIALIZATION ---
-    function buildIdMap(items) {
-        items.forEach(item => {
-            if(item.id) idMap[item.id] = item;
-            if(item.items) buildIdMap(item.items);
-        });
-    }
+            this.state.tabIndex = index;
+            this.state.viewStack = []; // Reset submenus
+            
+            // UI Update
+            tabs.forEach((t, i) => t.classList.toggle('active', i === index));
+            const targetId = tabs[index].getAttribute('data-target');
+            this.activateView(targetId);
+        },
 
-    function init() {
-        if(config.tabs) {
-            config.tabs.forEach(tab => {
-                if(tab.items) buildIdMap(tab.items);
+        activateView(viewId) {
+            // Hide all views
+            document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+            
+            // Show target
+            const target = document.getElementById(viewId);
+            if(target) {
+                target.classList.add('active');
+                this.state.currentViewId = viewId;
+                this.state.rowIndex = 0;
+                this.renderRowSelection();
+            }
+        },
+
+        renderRowSelection() {
+            const view = document.getElementById(this.state.currentViewId);
+            const rows = view.querySelectorAll('.menu-row');
+            
+            // Bounds check
+            if (this.state.rowIndex >= rows.length) this.state.rowIndex = rows.length - 1;
+            if (this.state.rowIndex < 0) this.state.rowIndex = 0;
+
+            rows.forEach((r, i) => r.classList.toggle('selected', i === this.state.rowIndex));
+            
+            // Update Help Text (Optional)
+            const helpText = rows[this.state.rowIndex]?.getAttribute('data-help') || "";
+            const helpContainer = view.querySelector('.col-help');
+            if(helpContainer) helpContainer.innerText = helpText;
+        },
+
+        // --- ACTIONS ---
+        handleEnter() {
+            const view = document.getElementById(this.state.currentViewId);
+            const row = view.querySelectorAll('.menu-row')[this.state.rowIndex];
+            if(!row) return;
+
+            const type = row.getAttribute('data-type');
+            
+            if (type === 'submenu') {
+                const target = row.getAttribute('data-target');
+                this.state.viewStack.push({ vid: this.state.currentViewId, r: this.state.rowIndex });
+                this.activateView(target);
+            } 
+            else if (type === 'select') {
+                const opts = JSON.parse(row.getAttribute('data-options') || "[]");
+                if(opts.length === 0) return;
+                
+                this.state.activeRowElement = row;
+                this.state.modalOptions = opts;
+                const curVal = row.querySelector('.item-value').innerText;
+                this.state.modalIndex = opts.indexOf(curVal);
+                if(this.state.modalIndex < 0) this.state.modalIndex = 0;
+                
+                this.toggleModal(true);
+            }
+        },
+
+        goBack() {
+            if (this.state.viewStack.length > 0) {
+                const prev = this.state.viewStack.pop();
+                this.activateView(prev.vid);
+                this.state.rowIndex = prev.r;
+                this.renderRowSelection();
+            } else {
+                this.toggleSaveDialog(true);
+            }
+        },
+
+        // --- MODALS ---
+        toggleModal(show) {
+            this.state.modalOpen = show;
+            const overlay = document.getElementById('optOverlay');
+            overlay.classList.toggle('open', show);
+            
+            if(show) {
+                const list = document.getElementById('optList');
+                list.innerHTML = '';
+                this.state.modalOptions.forEach((opt, i) => {
+                    const div = document.createElement('div');
+                    div.className = 'opt-row' + (i === this.state.modalIndex ? ' selected' : '');
+                    div.innerText = opt;
+                    list.appendChild(div);
+                });
+            }
+        },
+
+        updateModalSelection(dir) {
+            const rows = document.querySelectorAll('.opt-row');
+            rows[this.state.modalIndex].classList.remove('selected');
+            
+            this.state.modalIndex += dir;
+            if(this.state.modalIndex < 0) this.state.modalIndex = 0;
+            if(this.state.modalIndex >= this.state.modalOptions.length) this.state.modalIndex = this.state.modalOptions.length - 1;
+            
+            rows[this.state.modalIndex].classList.add('selected');
+        },
+
+        commitModalSelection() {
+            const val = this.state.modalOptions[this.state.modalIndex];
+            // Update UI
+            this.state.activeRowElement.querySelector('.item-value').innerText = val;
+            // Update Data
+            const id = this.state.activeRowElement.getAttribute('data-id');
+            if(this.idMap[id]) this.idMap[id].value = val;
+            
+            this.toggleModal(false);
+        },
+
+        // --- SAVE DIALOG ---
+        toggleSaveDialog(show) {
+            this.state.saveOpen = show;
+            this.state.saveYes = false; // default to No
+            document.getElementById('saveOverlay').classList.toggle('open', show);
+            this.renderSaveToggle();
+        },
+        
+        renderSaveToggle() {
+            const y = document.getElementById('btnY');
+            const n = document.getElementById('btnN');
+            if(this.state.saveYes) { y.classList.add('active'); n.classList.remove('active'); }
+            else { y.classList.remove('active'); n.classList.add('active'); }
+        },
+
+        saveAndExit() {
+            // 1. Download JSON
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(this.data, null, 2));
+            const dl = document.createElement('a');
+            dl.href = dataStr; dl.download = "bios_config.json";
+            dl.click();
+
+            // 2. Reboot Effect
+            document.getElementById('saveOverlay').classList.remove('open');
+            document.getElementById('blackout').style.display = 'block';
+            setTimeout(() => location.reload(), 1500);
+        },
+
+        // --- INPUT HANDLING ---
+        setupInput() {
+            document.addEventListener('keydown', (e) => {
+                const s = this.state;
+
+                // 1. INPUT: Modal Open
+                if (s.modalOpen) {
+                    if (e.key === 'ArrowUp') this.updateModalSelection(-1);
+                    if (e.key === 'ArrowDown') this.updateModalSelection(1);
+                    if (e.key === 'Enter') this.commitModalSelection();
+                    if (e.key === 'Escape') this.toggleModal(false);
+                    return;
+                }
+
+                // 2. INPUT: Save Dialog
+                if (s.saveOpen) {
+                    if (['ArrowLeft','ArrowRight','y','n'].includes(e.key.toLowerCase())) {
+                        s.saveYes = !s.saveYes;
+                        if(e.key.toLowerCase() === 'y') s.saveYes = true;
+                        if(e.key.toLowerCase() === 'n') s.saveYes = false;
+                        this.renderSaveToggle();
+                    }
+                    if (e.key === 'Enter') {
+                        if(s.saveYes) this.saveAndExit();
+                        else this.toggleSaveDialog(false);
+                    }
+                    if (e.key === 'Escape') this.toggleSaveDialog(false);
+                    return;
+                }
+
+                // 3. INPUT: Main Menu
+                if (e.key === 'ArrowRight' && s.viewStack.length === 0) this.switchTab(s.tabIndex + 1);
+                else if (e.key === 'ArrowLeft' && s.viewStack.length === 0) this.switchTab(s.tabIndex - 1);
+                else if (e.key === 'ArrowDown') { s.rowIndex++; this.renderRowSelection(); }
+                else if (e.key === 'ArrowUp') { s.rowIndex--; this.renderRowSelection(); }
+                else if (e.key === 'Enter') this.handleEnter();
+                else if (e.key === 'Escape') this.goBack();
+                else if (e.key === 'F10') this.toggleSaveDialog(true);
             });
         }
-        switchTab(0);
-    }
+    };
 
-    // --- NAVIGATION LOGIC ---
-    function switchTab(index) {
-        currentTab = index;
-        viewStack = []; // Reset Stack
-        navItems.forEach((t, i) => t.classList.toggle('active', i === currentTab));
-        const targetViewId = navItems[currentTab].getAttribute('data-target');
-        activateView(targetViewId);
-    }
-
-    function activateView(viewId) {
-        document.querySelectorAll('.view-container').forEach(el => el.classList.add('hidden'));
-        const target = document.getElementById(viewId);
-        if(target) {
-            target.classList.remove('hidden');
-            currentViewId = viewId;
-            currentRow = 0;
-            renderSelection();
-        }
-    }
-
-    function renderSelection() {
-        const view = document.getElementById(currentViewId);
-        const rows = view.querySelectorAll('.menu-row');
-        if(currentRow >= rows.length) currentRow = rows.length - 1;
-        if(currentRow < 0) currentRow = 0;
-        rows.forEach((r, i) => r.classList.toggle('selected', i === currentRow));
-    }
-
-    // --- SAVE & EXPORT LOGIC ---
-    function openSaveDialog() {
-        isSaveDialogOpen = true;
-        saveChoiceIsYes = false;
-        renderSaveDialog();
-        document.getElementById('saveOverlay').classList.add('open');
-    }
-
-    function renderSaveDialog() {
-        const btnY = document.getElementById('btn-y');
-        const btnN = document.getElementById('btn-n');
-        if(saveChoiceIsYes) {
-            btnY.classList.add('active'); btnN.classList.remove('active');
-        } else {
-            btnY.classList.remove('active'); btnN.classList.add('active');
-        }
-    }
-
-    function closeSaveDialog() {
-        isSaveDialogOpen = false;
-        document.getElementById('saveOverlay').classList.remove('open');
-    }
-
-    function performSaveAndExit() {
-        // Exportiert das aktuelle (modifizierte) config Objekt
-        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(config, null, 2));
-        const downloadAnchorNode = document.createElement('a');
-        downloadAnchorNode.setAttribute("href", dataStr);
-        downloadAnchorNode.setAttribute("download", "bios_config_modified.json");
-        document.body.appendChild(downloadAnchorNode);
-        downloadAnchorNode.click();
-        downloadAnchorNode.remove();
-        
-        closeSaveDialog();
-        
-        // Simuliere Reboot
-        setTimeout(() => {
-            document.getElementById('rebootScreen').style.display = 'flex';
-            setTimeout(() => location.reload(), 2000);
-        }, 500);
-    }
-
-    // --- INTERACTION LOGIC ---
-    function handleEnter() {
-        const view = document.getElementById(currentViewId);
-        const rows = view.querySelectorAll('.menu-row');
-        const selectedRow = rows[currentRow];
-        const type = selectedRow.getAttribute('data-type');
-        
-        if (type === 'submenu') {
-            const targetId = selectedRow.getAttribute('data-target');
-            viewStack.push({ viewId: currentViewId, row: currentRow });
-            activateView(targetId);
-        } else {
-            const optionsRaw = selectedRow.getAttribute('data-options');
-            if(!optionsRaw) return;
-            
-            currentOptions = JSON.parse(optionsRaw);
-            const currentVal = selectedRow.querySelector('.item-value').innerText;
-            
-            modalSelection = currentOptions.indexOf(currentVal);
-            if(modalSelection === -1) modalSelection = 0;
-            
-            currentTargetRow = selectedRow;
-            isModalOpen = true;
-            renderModal();
-            document.getElementById('modalOverlay').classList.add('open');
-        }
-    }
-
-    function selectModalOption() {
-        const newVal = currentOptions[modalSelection];
-        
-        // 1. Update UI
-        if(currentTargetRow) {
-            currentTargetRow.querySelector('.item-value').innerText = newVal;
-            
-            // 2. Update Data (Live Sync!)
-            const itemId = currentTargetRow.getAttribute('data-id');
-            if(itemId && idMap[itemId]) {
-                idMap[itemId].value = newVal;
-            }
-        }
-        closeModal();
-    }
-
-    function renderModal() {
-        const list = document.getElementById('modalOptionsList');
-        list.innerHTML = '';
-        currentOptions.forEach((opt, i) => {
-            const div = document.createElement('div');
-            div.className = 'modal-option';
-            div.innerText = opt;
-            if(i === modalSelection) div.classList.add('selected');
-            list.appendChild(div);
-        });
-    }
-
-    function closeModal() {
-        isModalOpen = false;
-        document.getElementById('modalOverlay').classList.remove('open');
-    }
-
-    // --- KEYBOARD CONTROLLER ---
-    document.addEventListener('keydown', (e) => {
-        // 1. SAVE DIALOG
-        if (isSaveDialogOpen) {
-            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
-                saveChoiceIsYes = !saveChoiceIsYes; renderSaveDialog();
-            } else if (e.key === 'Enter') {
-                if(saveChoiceIsYes) performSaveAndExit(); else closeSaveDialog();
-            } else if (e.key.toLowerCase() === 'y' || e.key.toLowerCase() === 'z') {
-                saveChoiceIsYes = true; renderSaveDialog(); setTimeout(performSaveAndExit, 150);
-            } else if (e.key.toLowerCase() === 'n' || e.key === 'Escape') {
-                closeSaveDialog();
-            }
-            return;
-        }
-
-        // 2. OPTIONS MODAL
-        if(isModalOpen) {
-            if(e.key === 'ArrowUp') { if(modalSelection > 0) modalSelection--; renderModal(); } 
-            else if(e.key === 'ArrowDown') { if(modalSelection < currentOptions.length - 1) modalSelection++; renderModal(); } 
-            else if(e.key === 'Enter') { selectModalOption(); }
-            else if(e.key === 'Escape') { closeModal(); }
-            return;
-        }
-
-        // 3. GLOBAL HOTKEYS
-        if (e.key === 'F10') {
-            e.preventDefault(); openSaveDialog(); return;
-        }
-
-        // 4. MAIN MENU NAVIGATION
-        const view = document.getElementById(currentViewId);
-        const rows = view ? view.querySelectorAll('.menu-row') : [];
-
-        if (e.key === 'ArrowRight' && viewStack.length === 0) {
-            switchTab((currentTab + 1) % navItems.length);
-        } else if (e.key === 'ArrowLeft' && viewStack.length === 0) {
-            switchTab((currentTab - 1 + navItems.length) % navItems.length);
-        } else if (e.key === 'ArrowDown') {
-            if (currentRow < rows.length - 1) { currentRow++; renderSelection(); }
-        } else if (e.key === 'ArrowUp') {
-            if (currentRow > 0) { currentRow--; renderSelection(); }
-        } else if (e.key === 'Enter') {
-            handleEnter();
-        } else if (e.key === 'Escape') {
-            if (viewStack.length > 0) {
-                const lastState = viewStack.pop();
-                document.querySelectorAll('.view-container').forEach(el => el.classList.add('hidden'));
-                const view = document.getElementById(lastState.viewId);
-                view.classList.remove('hidden');
-                currentViewId = lastState.viewId;
-                currentRow = lastState.row;
-                renderSelection();
-            } else {
-                openSaveDialog(); // ESC im Hauptmenü = Exit Dialog
-            }
-        }
-    });
-
-    init();
+    // START
+    BIOS.init();
 </script>
 </body>
 </html>

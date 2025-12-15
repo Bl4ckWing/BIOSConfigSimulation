@@ -1,3 +1,5 @@
+/* --- AMI APTIO V STYLE (Dein Retro Design) --- */
+
 :root {
     /* AMI Farbpalette: Nüchternes Grau und Dunkelblau */
     --bios-bg: #C0C0C0;  
@@ -14,165 +16,190 @@
     --border-style: 3px solid var(--bios-fg);
 }
 
-body {
-    background-color: #000;
-    /* AMI wirkt oft etwas "flacher", daher keine starken Scanlines hier, 
-       aber vielleicht ein leichtes Rauschen für den Retro-Vibe */
+* {
+    box-sizing: border-box;
 }
 
-.bios-container {
+body {
+    margin: 0;
+    padding: 5px; /* Kleiner Abstand zum Rand wie im Fenster */
+    background-color: #000; /* Der Monitor-Hintergrund */
+    color: var(--bios-text-normal);
+    font-family: var(--font-stack);
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+/* Der eigentliche BIOS Rahmen (simuliert .bios-container) */
+#bios-frame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: var(--bios-bg);
     border: var(--border-style);
     color: var(--bios-fg);
     font-weight: bold;
-    /* Ein innerer weißer Rahmen für den 3D-Effekt */
+    /* Dein 3D-Effekt */
     box-shadow: inset 0 0 0 2px var(--bios-white); 
 }
 
-/* HEADER & NAV */
-.header {
+/* --- HEADER --- */
+.bios-header {
     background-color: var(--bios-fg);
     color: var(--bios-white);
     text-align: center;
     padding: 5px;
-    margin: 2px;
+    margin: 4px; /* Etwas Abstand zum Rahmen */
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.nav-bar {
+/* --- NAV TABS --- */
+.nav-tabs {
+    display: flex;
+    justify-content: flex-start; /* AMI Tabs sind oft linksbündig */
+    padding-left: 10px;
     background-color: var(--bios-bg);
     border-bottom: 2px solid var(--bios-fg);
     padding-bottom: 0;
+    margin: 0 4px; /* Ausrichtung mit Header */
 }
 
 .nav-item {
-    padding: 4px 12px;
+    padding: 4px 15px;
     border-radius: 3px 3px 0 0;
-    margin-bottom: -2px; /* Damit es auf der Linie sitzt */
+    margin-right: 2px;
+    margin-bottom: -2px; /* Dein Trick für die Linie */
     border: 1px solid transparent;
+    cursor: pointer;
+    color: var(--bios-fg);
 }
 
 .nav-item.active {
     background-color: var(--bios-bg);
     border: 2px solid var(--bios-fg);
-    border-bottom: 2px solid var(--bios-bg); /* Überdeckt die Linie unten */
+    border-bottom: 2px solid var(--bios-bg); /* Überdeckt Linie */
     color: var(--bios-fg);
     z-index: 10;
-}
-
-/* CONTENT AREA */
-.main-content {
-    padding: 20px;
-    color: var(--bios-text-normal);
-}
-
-/* BREADCRUMBS (Der Pfad oben) */
-.view-header-internal {
-    display: block;
-    color: var(--bios-fg);
     font-weight: bold;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
+}
+
+/* --- MAIN CONTENT (Layout Logik) --- */
+.view-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Füllt den Rest */
+    margin: 0 4px;
+    background: var(--bios-bg);
+    overflow: hidden; /* Wichtig für Scrollbars */
+}
+
+.view-content-wrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+/* Breadcrumbs / Pfad */
+.view-header-internal {
+    padding: 10px 15px 5px 15px;
+    color: var(--bios-fg);
     border-bottom: 1px dashed var(--bios-fg);
-    text-transform: uppercase;
 }
 
 /* SPALTEN */
-.column-right { 
-    border-left: 2px solid var(--bios-fg); 
-    color: var(--bios-fg); 
+.column-left {
+    width: 65%;
+    padding: 0 10px 10px 10px;
+    overflow-y: auto; /* Scrollbar nur hier */
+    /* Scrollbar Styling für Webkit */
+    scrollbar-width: thin;
+    scrollbar-color: var(--bios-fg) var(--bios-bg);
+}
+
+.column-right {
+    width: 35%;
+    padding: 10px;
+    border-left: 2px solid var(--bios-fg);
+    color: var(--bios-fg);
     font-style: italic;
+    font-size: 0.9em;
+    background: var(--bios-bg);
 }
 
-/* MENÜ ZEILEN */
+/* --- MENU ITEMS --- */
 .menu-row {
+    display: flex;
+    justify-content: space-between;
     padding: 2px 5px;
-    color: var(--bios-text-normal);
+    cursor: pointer;
 }
 
-.menu-row.selected {
+.menu-row:hover, .menu-row.selected {
     background-color: var(--highlight-bg);
     color: var(--highlight-text);
 }
 
-.menu-row.selected .item-value,
-.menu-row.selected .item-label {
+/* Wichtig: Farben bei Hover auch für die Kinder-Elemente ändern */
+.menu-row:hover .item-label, 
+.menu-row:hover .item-value,
+.menu-row.selected .item-label, 
+.menu-row.selected .item-value {
     color: var(--highlight-text);
 }
 
-.item-value { 
-    color: var(--bios-fg); 
+.item-label { color: var(--bios-text-normal); }
+.item-value { color: var(--bios-fg); font-weight: bold; }
+
+/* Subtitel (Überschriften im Menü) */
+div[data-type="text"] {
+    margin-top: 10px;
+    margin-bottom: 2px;
+    color: var(--bios-fg);
+    font-weight: bold;
+    pointer-events: none;
+}
+div[data-type="text"] .item-value { display: none; }
+
+/* Submenü Pfeil */
+div[data-type="submenu"] .item-label::before {
+    content: "► ";
+    font-size: 0.8em;
+    margin-right: 5px;
 }
 
-/* FOOTER */
-.footer {
+/* --- FOOTER --- */
+.bios-footer {
     border-top: 2px solid var(--bios-fg);
     background-color: var(--bios-bg);
     color: var(--bios-text-normal);
+    padding: 5px;
+    margin: 4px;
+    font-size: 0.85em;
+    text-align: center;
 }
 
-/* --- MODAL (Optionen Auswahl) --- */
+/* --- UTILS --- */
+.hidden { display: none !important; }
+
+/* --- FUTURE USE (Modals/Popups) --- */
+/* Diese Klassen werden aktuell vom JS noch nicht getriggert, 
+   aber wir lassen sie drin für später! */
 .modal-box {
     background: var(--bios-bg);
     border: 3px solid var(--bios-fg);
-    box-shadow: 10px 10px 0 rgba(0,0,0,0.5); /* Harter Schatten */
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.5);
     color: var(--bios-text-normal);
-    min-width: 350px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    min-width: 400px;
 }
-
 .modal-title {
-    background: var(--bios-fg);
-    color: var(--bios-white);
-    padding: 5px;
-}
-
-.modal-option {
-    padding: 3px 10px;
-}
-
-.modal-option.selected {
-    background-color: var(--highlight-bg);
-    color: var(--highlight-text);
-}
-
-/* --- SAVE DIALOG (AMI Style) --- */
-.save-overlay {
-    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-    display: none; justify-content: center; align-items: center; z-index: 200;
-}
-.save-overlay.open { display: flex; }
-
-.save-box {
-    background-color: var(--bios-bg);
-    border: 3px solid var(--bios-fg);
-    /* AMI hatte oft diesen doppelten Rahmen-Look bei Popups */
-    outline: 2px solid var(--bios-white); 
-    outline-offset: -5px;
-    
-    padding: 20px 40px;
-    font-weight: bold;
-    box-shadow: 15px 15px 0 rgba(0,0,0,0.5);
-    text-align: center;
-    min-width: 300px;
-    color: var(--bios-text-normal);
-}
-
-.save-title { margin-bottom: 20px; }
-
-.save-controls {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    font-size: 1.1em;
-}
-
-.save-opt {
-    padding: 2px 8px;
-    cursor: pointer;
-    border: 1px solid transparent;
-}
-
-/* Invertierung bei Auswahl */
-.save-opt.active {
-    background-color: var(--highlight-bg);
-    color: var(--highlight-text);
+    background: var(--bios-fg); color: var(--bios-white); padding: 5px; text-align: center;
 }
