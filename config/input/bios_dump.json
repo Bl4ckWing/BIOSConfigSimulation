@@ -91,7 +91,7 @@
             "Hidden",
             "Show"
           ],
-          "id": "item-cda4b71c"
+          "id": "item-e70b7cf5"
         },
         {
           "type": "item",
@@ -101,7 +101,7 @@
             "Hidden",
             "Show"
           ],
-          "id": "item-9dad0538"
+          "id": "item-8fcc50a0"
         },
         {
           "type": "item",
@@ -111,7 +111,7 @@
             "Hidden",
             "Show"
           ],
-          "id": "item-d7d623e4"
+          "id": "item-b233ac75"
         },
         {
           "type": "item",
@@ -121,7 +121,7 @@
             "Hidden",
             "Show"
           ],
-          "id": "item-2bdc6807"
+          "id": "item-4cc708e9"
         },
         {
           "type": "item",
@@ -156,7 +156,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-e83b4c58"
+          "id": "item-6251bc4a"
         },
         {
           "type": "item",
@@ -171,14 +171,14 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-d624391a"
+          "id": "item-db18f4ce"
         },
         {
           "type": "item",
           "label": "System Language",
           "value": "Select...",
           "options": [],
-          "id": "item-3cad3573"
+          "id": "item-70ca03fa"
         },
         {
           "type": "item",
@@ -203,7 +203,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-00de02de"
+          "id": "item-f1efdb1b"
         },
         {
           "type": "item",
@@ -213,7 +213,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-4d0d6eb0"
+          "id": "item-e42860d9"
         },
         {
           "type": "item",
@@ -418,7 +418,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-6ea9819c"
+          "id": "item-63e86807"
         },
         {
           "type": "item",
@@ -428,7 +428,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-145454ec"
+          "id": "item-3cc6861e"
         },
         {
           "type": "item",
@@ -438,7 +438,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-df2b02cb"
+          "id": "item-d70e6312"
         },
         {
           "type": "item",
@@ -450,7 +450,7 @@
             "D.O.C.P.",
             "D.O.C.P. Boost"
           ],
-          "id": "item-931aa9ae"
+          "id": "item-13b97ce4"
         },
         {
           "type": "item",
@@ -460,7 +460,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-78ff704e"
+          "id": "item-3b147842"
         },
         {
           "type": "item",
@@ -472,7 +472,7 @@
             "D.O.C.P.",
             "D.O.C.P. Boost"
           ],
-          "id": "item-d0e8731b"
+          "id": "item-9d44af6a"
         },
         {
           "type": "item",
@@ -482,7 +482,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-f3a8a4f7"
+          "id": "item-9bc0cd77"
         },
         {
           "type": "item",
@@ -494,7 +494,7 @@
             "D.O.C.P.",
             "D.O.C.P. Boost"
           ],
-          "id": "item-09eb0b67"
+          "id": "item-053400cf"
         },
         {
           "type": "item",
@@ -504,7 +504,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-cdf84862"
+          "id": "item-5028aca1"
         },
         {
           "type": "item",
@@ -516,7 +516,7 @@
             "D.O.C.P.",
             "D.O.C.P. Boost"
           ],
-          "id": "item-4b99d0ba"
+          "id": "item-fe58dcc5"
         },
         {
           "type": "item",
@@ -526,7 +526,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-3f3bc5a1"
+          "id": "item-77b191f6"
         },
         {
           "type": "item",
@@ -538,7 +538,7 @@
             "D.O.C.P.",
             "D.O.C.P. Boost"
           ],
-          "id": "item-974eefd6"
+          "id": "item-f50463f1"
         },
         {
           "type": "item",
@@ -548,7 +548,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-54098415"
+          "id": "item-63b86649"
         },
         {
           "type": "item",
@@ -560,7 +560,7 @@
             "D.O.C.P.",
             "D.O.C.P. Boost"
           ],
-          "id": "item-5c4c87b9"
+          "id": "item-308fe384"
         },
         {
           "type": "item",
@@ -570,7 +570,7 @@
             "Profile #1",
             "Profile #2"
           ],
-          "id": "item-ef75412c"
+          "id": "item-ffa9605e"
         },
         {
           "type": "item",
@@ -579,7 +579,7 @@
           "options": [
             "Profile #1"
           ],
-          "id": "item-87098f8b"
+          "id": "item-d6031e9a"
         },
         {
           "type": "item",
@@ -588,7 +588,7 @@
           "options": [
             "Profile #2"
           ],
-          "id": "item-887c46f7"
+          "id": "item-a13ccfa7"
         },
         {
           "type": "item",
@@ -599,7 +599,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-fe25d13d"
+          "id": "item-4179c0eb"
         },
         {
           "type": "item",
@@ -610,7 +610,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-4ab45642"
+          "id": "item-0e7a1ede"
         },
         {
           "type": "item",
@@ -624,7 +624,7 @@
             "Level 3 (OC)",
             "Level 4 (OC)"
           ],
-          "id": "item-0a87fd59"
+          "id": "item-850882a5"
         },
         {
           "type": "item",
@@ -634,7 +634,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-ee197e66"
+          "id": "item-fff399b8"
         },
         {
           "type": "item",
@@ -643,7 +643,7 @@
           "options": [
             "Auto"
           ],
-          "id": "item-0a4a7771"
+          "id": "item-6b021cbd"
         },
         {
           "type": "item",
@@ -652,7 +652,7 @@
           "options": [
             "Auto"
           ],
-          "id": "item-5ac31605"
+          "id": "item-af8e3fad"
         },
         {
           "type": "item",
@@ -661,7 +661,7 @@
           "options": [
             "Auto"
           ],
-          "id": "item-c3272c18"
+          "id": "item-aa478b22"
         },
         {
           "type": "item",
@@ -720,7 +720,7 @@
             "2950MHZ",
             "3000MHZ"
           ],
-          "id": "item-b24f0796"
+          "id": "item-c2b87cbc"
         },
         {
           "type": "item",
@@ -730,7 +730,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-4f17aed6"
+          "id": "item-134a107e"
         },
         {
           "type": "item",
@@ -742,7 +742,7 @@
             "Extreme Mode",
             "Manual Mode"
           ],
-          "id": "item-072e91dc"
+          "id": "item-8eef1577"
         },
         {
           "type": "item",
@@ -752,7 +752,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-50a82202"
+          "id": "item-c6af0c9e"
         },
         {
           "type": "item",
@@ -763,7 +763,7 @@
             "TPU I",
             "TPU II"
           ],
-          "id": "item-9bd94de7"
+          "id": "item-231dea24"
         },
         {
           "type": "item",
@@ -776,7 +776,7 @@
             "Aida/Geekbench",
             "CBR15 Aggressive"
           ],
-          "id": "item-b12b8ed6"
+          "id": "item-38938f83"
         },
         {
           "type": "item",
@@ -787,7 +787,7 @@
             "Manual",
             "Offset mode"
           ],
-          "id": "item-9769a0d7"
+          "id": "item-f777a8ef"
         },
         {
           "type": "item",
@@ -797,7 +797,7 @@
             "-",
             "+"
           ],
-          "id": "item-04f06601"
+          "id": "item-8262aeca"
         },
         {
           "type": "item",
@@ -808,7 +808,7 @@
             "Manual",
             "Offset mode"
           ],
-          "id": "item-16a0c660"
+          "id": "item-8c4c1b0c"
         },
         {
           "type": "item",
@@ -818,7 +818,7 @@
             "+",
             "-"
           ],
-          "id": "item-22139c2d"
+          "id": "item-1391a478"
         },
         {
           "type": "item",
@@ -828,7 +828,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-6f220a27"
+          "id": "item-1003a826"
         },
         {
           "type": "item",
@@ -838,7 +838,7 @@
             "-",
             "+"
           ],
-          "id": "item-d7569e2a"
+          "id": "item-cce7efec"
         },
         {
           "type": "item",
@@ -848,7 +848,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-e55e00ce"
+          "id": "item-641256c7"
         },
         {
           "type": "item",
@@ -858,7 +858,7 @@
             "-",
             "+"
           ],
-          "id": "item-b7eba74e"
+          "id": "item-7c21c17c"
         }
       ]
     },
@@ -880,7 +880,7 @@
             "Level 7",
             "Level 8"
           ],
-          "id": "item-0278f066"
+          "id": "item-bc8926dc"
         },
         {
           "type": "item",
@@ -894,7 +894,7 @@
             "Level 4",
             "Level 5"
           ],
-          "id": "item-32c1d2d3"
+          "id": "item-51b459c6"
         },
         {
           "type": "item",
@@ -906,7 +906,7 @@
             "120%",
             "\\x1b[1;31;m130%"
           ],
-          "id": "item-3100eaba"
+          "id": "item-e338a441"
         },
         {
           "type": "item",
@@ -917,7 +917,7 @@
             "Extreme",
             "Manual"
           ],
-          "id": "item-1ae22bb8"
+          "id": "item-42a2b363"
         },
         {
           "type": "item",
@@ -929,7 +929,7 @@
             "Medium",
             "Regular"
           ],
-          "id": "item-6c14e967"
+          "id": "item-6fb5b1b1"
         },
         {
           "type": "item",
@@ -939,7 +939,7 @@
             "T.Probe",
             "Extreme"
           ],
-          "id": "item-c15a3e88"
+          "id": "item-32777053"
         },
         {
           "type": "item",
@@ -956,7 +956,7 @@
             "Level 7",
             "Level 8"
           ],
-          "id": "item-23584b9e"
+          "id": "item-06853f96"
         },
         {
           "type": "item",
@@ -970,7 +970,7 @@
             "Level 4",
             "Level 5"
           ],
-          "id": "item-18f2453a"
+          "id": "item-b346a735"
         },
         {
           "type": "item",
@@ -982,7 +982,7 @@
             "120%",
             "\\x1b[1;31;m130%"
           ],
-          "id": "item-4727afca"
+          "id": "item-b7d35d11"
         },
         {
           "type": "item",
@@ -993,7 +993,7 @@
             "Extreme",
             "Manual"
           ],
-          "id": "item-cdeef332"
+          "id": "item-bf273935"
         },
         {
           "type": "item",
@@ -1005,7 +1005,7 @@
             "Medium",
             "Regular"
           ],
-          "id": "item-d1274c3b"
+          "id": "item-b07d007c"
         }
       ]
     },
@@ -1029,7 +1029,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-e3d07958"
+          "id": "item-69c81117"
         },
         {
           "type": "item",
@@ -1040,7 +1040,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-79ae0e03"
+          "id": "item-b1595a64"
         },
         {
           "type": "text",
@@ -1056,7 +1056,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-03c23a23"
+          "id": "item-c22bf531"
         },
         {
           "type": "text",
@@ -1076,7 +1076,7 @@
             "24 ohms",
             "20 ohms"
           ],
-          "id": "item-51e206d4"
+          "id": "item-1e5d25e8"
         },
         {
           "type": "item",
@@ -1091,7 +1091,7 @@
             "24 ohms",
             "20 ohms"
           ],
-          "id": "item-a464adbc"
+          "id": "item-62aea679"
         },
         {
           "type": "item",
@@ -1106,7 +1106,7 @@
             "24 ohms",
             "20 ohms"
           ],
-          "id": "item-8c1f9a17"
+          "id": "item-dea15404"
         },
         {
           "type": "item",
@@ -1121,7 +1121,7 @@
             "24 ohms",
             "20 ohms"
           ],
-          "id": "item-2ef11db9"
+          "id": "item-a1de8457"
         },
         {
           "type": "item",
@@ -1148,7 +1148,7 @@
             "28.2 ohms",
             "26.7 ohms"
           ],
-          "id": "item-9df1d515"
+          "id": "item-81284fe1"
         },
         {
           "type": "item",
@@ -1175,7 +1175,7 @@
             "28.2 ohms",
             "26.7 ohms"
           ],
-          "id": "item-4a850482"
+          "id": "item-339f163c"
         },
         {
           "type": "item",
@@ -1190,7 +1190,7 @@
             "96 ohms",
             "80 ohms"
           ],
-          "id": "item-2b6b196b"
+          "id": "item-b816ae86"
         },
         {
           "type": "item",
@@ -1201,7 +1201,7 @@
             "1/2 MEMCLK DELAY",
             "1 MEMCLK DELAY"
           ],
-          "id": "item-79dd0926"
+          "id": "item-3b40eb21"
         },
         {
           "type": "item",
@@ -1212,7 +1212,7 @@
             "1/2 MEMCLK DELAY",
             "1 MEMCLK DELAY"
           ],
-          "id": "item-0c477a57"
+          "id": "item-df60b068"
         },
         {
           "type": "item",
@@ -1223,7 +1223,7 @@
             "1/2 MEMCLK DELAY",
             "1 MEMCLK DELAY"
           ],
-          "id": "item-d2bb8c16"
+          "id": "item-a0aa3699"
         },
         {
           "type": "item",
@@ -1237,7 +1237,7 @@
             "240 ohms",
             "HI-Z"
           ],
-          "id": "item-f2cd14c3"
+          "id": "item-7fee91d1"
         },
         {
           "type": "item",
@@ -1254,7 +1254,7 @@
             "120 ohms",
             "240 ohms"
           ],
-          "id": "item-54a5869d"
+          "id": "item-44d5b6b9"
         },
         {
           "type": "item",
@@ -1271,7 +1271,7 @@
             "120 ohms",
             "240 ohms"
           ],
-          "id": "item-f915af7d"
+          "id": "item-022c7f0c"
         },
         {
           "type": "item",
@@ -1298,7 +1298,7 @@
             "30 ohm",
             "28.2 ohm"
           ],
-          "id": "item-1038ada2"
+          "id": "item-029fbcfe"
         },
         {
           "type": "item",
@@ -1309,7 +1309,7 @@
             "1T",
             "2T"
           ],
-          "id": "item-39d88554"
+          "id": "item-ca608d2d"
         },
         {
           "type": "item",
@@ -1320,7 +1320,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-30354387"
+          "id": "item-e3361f06"
         },
         {
           "type": "item",
@@ -1331,7 +1331,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-d1b07557"
+          "id": "item-67722aca"
         },
         {
           "type": "item",
@@ -1348,7 +1348,7 @@
             "RZQ/3",
             "RZQ/7"
           ],
-          "id": "item-3b00d5a6"
+          "id": "item-ace4555c"
         },
         {
           "type": "item",
@@ -1362,7 +1362,7 @@
             "Hi-Z",
             "RZQ/3"
           ],
-          "id": "item-9f37a6c3"
+          "id": "item-a06d23be"
         },
         {
           "type": "item",
@@ -1379,7 +1379,7 @@
             "RZQ/3",
             "RZQ/7"
           ],
-          "id": "item-f5c046a6"
+          "id": "item-e1d547c3"
         },
         {
           "type": "item",
@@ -1394,7 +1394,7 @@
             "24.0 Ohm",
             "20.0 Ohm"
           ],
-          "id": "item-b319325d"
+          "id": "item-b64ed52c"
         },
         {
           "type": "item",
@@ -1409,7 +1409,7 @@
             "24.0 Ohm",
             "20.0 Ohm"
           ],
-          "id": "item-1da8568f"
+          "id": "item-df824a90"
         },
         {
           "type": "item",
@@ -1424,7 +1424,7 @@
             "24.0 Ohm",
             "20.0 Ohm"
           ],
-          "id": "item-6a5278e5"
+          "id": "item-63c9605a"
         },
         {
           "type": "item",
@@ -1439,7 +1439,7 @@
             "24.0 Ohm",
             "20.0 Ohm"
           ],
-          "id": "item-69258c93"
+          "id": "item-30b67658"
         },
         {
           "type": "item",
@@ -1450,7 +1450,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-06dab686"
+          "id": "item-b413be78"
         }
       ]
     },
@@ -1521,7 +1521,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-159d6c6b"
+          "id": "item-fd2e6380"
         },
         {
           "type": "item",
@@ -1533,7 +1533,7 @@
             "Enabled",
             "Manual"
           ],
-          "id": "item-3cbcaf65"
+          "id": "item-dcf4a36a"
         },
         {
           "type": "item",
@@ -1543,7 +1543,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-13349c63"
+          "id": "item-9faa0cda"
         },
         {
           "type": "item",
@@ -1562,7 +1562,7 @@
             "9X",
             "10X"
           ],
-          "id": "item-2977dea2"
+          "id": "item-c2ea62a2"
         },
         {
           "type": "item",
@@ -1572,7 +1572,7 @@
             "Manual",
             "Auto"
           ],
-          "id": "item-249bf102"
+          "id": "item-2dc7dce0"
         }
       ]
     },
@@ -1588,7 +1588,7 @@
             "All Cores",
             "Per Core"
           ],
-          "id": "item-25f1031b"
+          "id": "item-bb38893d"
         },
         {
           "type": "item",
@@ -1598,7 +1598,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-e54fdfcb"
+          "id": "item-34fc8590"
         },
         {
           "type": "item",
@@ -1608,7 +1608,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-35dc447e"
+          "id": "item-b731a07b"
         },
         {
           "type": "item",
@@ -1618,7 +1618,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-a3cc3dbc"
+          "id": "item-6a5b8314"
         },
         {
           "type": "item",
@@ -1628,7 +1628,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-c1a9d5f9"
+          "id": "item-011d1a2c"
         },
         {
           "type": "item",
@@ -1638,7 +1638,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-89460efb"
+          "id": "item-5a152b56"
         },
         {
           "type": "item",
@@ -1648,7 +1648,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-aa27f8ff"
+          "id": "item-001491c0"
         },
         {
           "type": "item",
@@ -1658,7 +1658,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-88eac23f"
+          "id": "item-e2727a3c"
         },
         {
           "type": "item",
@@ -1668,7 +1668,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-3fe8e88c"
+          "id": "item-548ec347"
         },
         {
           "type": "item",
@@ -1678,7 +1678,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-a573c141"
+          "id": "item-8a949610"
         },
         {
           "type": "item",
@@ -1688,7 +1688,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-65807497"
+          "id": "item-e84d2169"
         },
         {
           "type": "item",
@@ -1698,7 +1698,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-855836a7"
+          "id": "item-a90f7659"
         },
         {
           "type": "item",
@@ -1708,7 +1708,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-5012660e"
+          "id": "item-09b4bb03"
         },
         {
           "type": "item",
@@ -1718,7 +1718,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-28bd90ec"
+          "id": "item-4010aad5"
         },
         {
           "type": "item",
@@ -1728,7 +1728,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-60ef1071"
+          "id": "item-98c8a522"
         },
         {
           "type": "item",
@@ -1738,7 +1738,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-98f3c636"
+          "id": "item-3779d1c9"
         },
         {
           "type": "item",
@@ -1748,7 +1748,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-a4c4fb0f"
+          "id": "item-aec47a3b"
         },
         {
           "type": "item",
@@ -1758,7 +1758,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-d10fc2cb"
+          "id": "item-2cd246ec"
         },
         {
           "type": "item",
@@ -1768,7 +1768,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-334e32bc"
+          "id": "item-cfb4f1e8"
         },
         {
           "type": "item",
@@ -1778,7 +1778,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-e3601c6a"
+          "id": "item-e336a1e3"
         },
         {
           "type": "item",
@@ -1788,7 +1788,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-e5b540dd"
+          "id": "item-d1ef91b8"
         },
         {
           "type": "item",
@@ -1798,7 +1798,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-8d1270b5"
+          "id": "item-a121e7d9"
         },
         {
           "type": "item",
@@ -1808,7 +1808,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-939c2a80"
+          "id": "item-16c9859c"
         },
         {
           "type": "item",
@@ -1818,7 +1818,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-37977f99"
+          "id": "item-0000b353"
         },
         {
           "type": "item",
@@ -1828,7 +1828,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-8b5c0515"
+          "id": "item-d39b8014"
         },
         {
           "type": "item",
@@ -1838,7 +1838,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-0e4b7530"
+          "id": "item-fcca998b"
         },
         {
           "type": "item",
@@ -1848,7 +1848,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-f7bfd319"
+          "id": "item-04f35b99"
         },
         {
           "type": "item",
@@ -1858,7 +1858,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-1f7132d0"
+          "id": "item-101b00b0"
         },
         {
           "type": "item",
@@ -1868,7 +1868,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-eb6b72e4"
+          "id": "item-4390bbb0"
         },
         {
           "type": "item",
@@ -1878,7 +1878,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-71694c50"
+          "id": "item-c47d9af4"
         },
         {
           "type": "item",
@@ -1888,7 +1888,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-442cd5bf"
+          "id": "item-6dbae0b1"
         },
         {
           "type": "item",
@@ -1898,7 +1898,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-5a0e7029"
+          "id": "item-78c0cb01"
         },
         {
           "type": "item",
@@ -1908,7 +1908,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-f65cd22c"
+          "id": "item-124c242a"
         },
         {
           "type": "item",
@@ -1918,7 +1918,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-8c0d9db4"
+          "id": "item-3265c3af"
         },
         {
           "type": "item",
@@ -1928,7 +1928,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-75178228"
+          "id": "item-d79eef13"
         },
         {
           "type": "item",
@@ -1938,7 +1938,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-42258d01"
+          "id": "item-1a7dd56c"
         },
         {
           "type": "item",
@@ -1948,7 +1948,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-1735043a"
+          "id": "item-15a44689"
         },
         {
           "type": "item",
@@ -1958,7 +1958,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-236eea20"
+          "id": "item-cb4efdbc"
         },
         {
           "type": "item",
@@ -1968,7 +1968,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-e1efbe5a"
+          "id": "item-3e5076de"
         },
         {
           "type": "item",
@@ -1978,7 +1978,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-e322ef65"
+          "id": "item-0fd1dc36"
         },
         {
           "type": "item",
@@ -1988,7 +1988,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-03f4a11a"
+          "id": "item-28e504cb"
         },
         {
           "type": "item",
@@ -1998,7 +1998,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-86df57fa"
+          "id": "item-b4bca6ee"
         },
         {
           "type": "item",
@@ -2008,7 +2008,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-658f2451"
+          "id": "item-6ef616af"
         },
         {
           "type": "item",
@@ -2018,7 +2018,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-e4ffe26e"
+          "id": "item-690921f6"
         },
         {
           "type": "item",
@@ -2028,7 +2028,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-0e7b00a0"
+          "id": "item-5e14e8f4"
         },
         {
           "type": "item",
@@ -2038,7 +2038,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-b02b1941"
+          "id": "item-ca2d0d20"
         },
         {
           "type": "item",
@@ -2048,7 +2048,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-d00504f2"
+          "id": "item-e6f880ea"
         },
         {
           "type": "item",
@@ -2058,7 +2058,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-aad973fa"
+          "id": "item-918fabd3"
         },
         {
           "type": "item",
@@ -2068,7 +2068,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-78a6c03a"
+          "id": "item-9bdd955f"
         },
         {
           "type": "item",
@@ -2078,7 +2078,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-a905a25d"
+          "id": "item-9fcdc684"
         },
         {
           "type": "item",
@@ -2088,7 +2088,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-348b964f"
+          "id": "item-6258ea2e"
         },
         {
           "type": "item",
@@ -2098,7 +2098,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-df1c09df"
+          "id": "item-14a452d1"
         },
         {
           "type": "item",
@@ -2108,7 +2108,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-8fa9a766"
+          "id": "item-c6e4cad6"
         },
         {
           "type": "item",
@@ -2118,7 +2118,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-ee15c982"
+          "id": "item-d5eb84c3"
         },
         {
           "type": "item",
@@ -2128,7 +2128,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-b7a00240"
+          "id": "item-6c1c8d9f"
         },
         {
           "type": "item",
@@ -2138,7 +2138,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-6eea4873"
+          "id": "item-7afd85a4"
         },
         {
           "type": "item",
@@ -2148,7 +2148,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-f6b668d2"
+          "id": "item-cf64412c"
         },
         {
           "type": "item",
@@ -2158,7 +2158,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-ce85d6cb"
+          "id": "item-c241bae2"
         },
         {
           "type": "item",
@@ -2168,7 +2168,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-79802ac9"
+          "id": "item-f6566f1c"
         },
         {
           "type": "item",
@@ -2178,7 +2178,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-2fd05875"
+          "id": "item-2fee3d48"
         },
         {
           "type": "item",
@@ -2188,7 +2188,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-63b75827"
+          "id": "item-e1724aff"
         },
         {
           "type": "item",
@@ -2198,7 +2198,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-5efb3808"
+          "id": "item-5c7fc875"
         },
         {
           "type": "item",
@@ -2208,7 +2208,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-14ec8bd7"
+          "id": "item-e704d0b2"
         },
         {
           "type": "item",
@@ -2218,7 +2218,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-997041bd"
+          "id": "item-77a94a3a"
         },
         {
           "type": "item",
@@ -2228,7 +2228,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-bc809233"
+          "id": "item-ed09b6d4"
         },
         {
           "type": "item",
@@ -2238,7 +2238,7 @@
             "Positive",
             "Negative"
           ],
-          "id": "item-dfd21b97"
+          "id": "item-489bfea6"
         }
       ]
     },
@@ -2258,7 +2258,7 @@
             "AHCI Mode",
             "RAID Mode"
           ],
-          "id": "item-2780ff7f"
+          "id": "item-73801776"
         },
         {
           "type": "item",
@@ -2379,7 +2379,7 @@
             "AHCI Mode",
             "RAID Mode"
           ],
-          "id": "item-0de2282d"
+          "id": "item-dca5a490"
         },
         {
           "type": "item",
@@ -2500,7 +2500,7 @@
             "AHCI Mode",
             "RAID Mode"
           ],
-          "id": "item-494f2ec4"
+          "id": "item-7dcea99c"
         },
         {
           "type": "item",
@@ -2635,7 +2635,7 @@
             "Disable",
             "Enable"
           ],
-          "id": "item-91efdbd1"
+          "id": "item-ed577277"
         },
         {
           "type": "item",
@@ -2645,7 +2645,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-a31ebe96"
+          "id": "item-6e9b4608"
         },
         {
           "type": "item",
@@ -2670,7 +2670,7 @@
             "Disable",
             "Enable"
           ],
-          "id": "item-78542ab3"
+          "id": "item-2f483e7e"
         },
         {
           "type": "item",
@@ -2680,7 +2680,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-9d10439e"
+          "id": "item-8d4d0270"
         },
         {
           "type": "item",
@@ -2690,7 +2690,7 @@
             "None",
             "TPM Clear"
           ],
-          "id": "item-8ffe1c10"
+          "id": "item-5e6c33b5"
         },
         {
           "type": "item",
@@ -2700,7 +2700,7 @@
             "Disable",
             "Enable"
           ],
-          "id": "item-4b454bbe"
+          "id": "item-61e3d8ce"
         },
         {
           "type": "item",
@@ -2710,7 +2710,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-d6128312"
+          "id": "item-a16586cc"
         },
         {
           "type": "item",
@@ -2720,7 +2720,7 @@
             "None",
             "TPM Clear"
           ],
-          "id": "item-26714092"
+          "id": "item-dd5e4842"
         },
         {
           "type": "text",
@@ -2785,7 +2785,7 @@
             "Disable",
             "Enable"
           ],
-          "id": "item-e3a25406"
+          "id": "item-0ae62f6a"
         },
         {
           "type": "item",
@@ -2805,7 +2805,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-c2cfdfb5"
+          "id": "item-d3967542"
         },
         {
           "type": "item",
@@ -2815,7 +2815,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-a1707be6"
+          "id": "item-fc0ae068"
         },
         {
           "type": "item",
@@ -2825,7 +2825,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-9216f9d3"
+          "id": "item-cdf3aeaa"
         },
         {
           "type": "item",
@@ -2835,7 +2835,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-f5d3605f"
+          "id": "item-9bc16835"
         },
         {
           "type": "item",
@@ -2845,7 +2845,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-f29898f4"
+          "id": "item-1e0f2f00"
         },
         {
           "type": "item",
@@ -2855,7 +2855,7 @@
             "None",
             "TPM Clear"
           ],
-          "id": "item-40d61dea"
+          "id": "item-1bb93b2a"
         },
         {
           "type": "item",
@@ -2865,7 +2865,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-03c46ff3"
+          "id": "item-079b3592"
         },
         {
           "type": "item",
@@ -2875,7 +2875,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-4b2d03f7"
+          "id": "item-202ca633"
         },
         {
           "type": "item",
@@ -2885,7 +2885,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-c87e262a"
+          "id": "item-33ea4fc5"
         },
         {
           "type": "item",
@@ -2895,7 +2895,7 @@
             "TCG_1_2",
             "TCG_2"
           ],
-          "id": "item-4cf61517"
+          "id": "item-c9f680ef"
         },
         {
           "type": "item",
@@ -2905,7 +2905,7 @@
             "1.2",
             "1.3"
           ],
-          "id": "item-7327a1db"
+          "id": "item-342e8955"
         },
         {
           "type": "item",
@@ -2915,7 +2915,7 @@
             "CRB",
             "TIS"
           ],
-          "id": "item-56f458dd"
+          "id": "item-d6b6d801"
         },
         {
           "type": "item",
@@ -2925,7 +2925,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-8567b470"
+          "id": "item-60838a3c"
         }
       ]
     },
@@ -2940,7 +2940,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-916b5586"
+          "id": "item-932481aa"
         },
         {
           "type": "item",
@@ -2950,7 +2950,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-413ee41e"
+          "id": "item-4aaf2e06"
         }
       ]
     },
@@ -2980,7 +2980,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-6b6ac084"
+          "id": "item-e86c5aff"
         },
         {
           "type": "item",
@@ -2989,7 +2989,7 @@
           "options": [
             "PState 0"
           ],
-          "id": "item-af4fe3ef"
+          "id": "item-e6db42c3"
         },
         {
           "type": "item",
@@ -2999,7 +2999,7 @@
             "PState 0",
             "PState 1"
           ],
-          "id": "item-19c5a6e7"
+          "id": "item-6c8d6b06"
         },
         {
           "type": "item",
@@ -3010,7 +3010,7 @@
             "PState 1",
             "PState 2"
           ],
-          "id": "item-f56bc648"
+          "id": "item-42d385e1"
         },
         {
           "type": "item",
@@ -3022,7 +3022,7 @@
             "PState 2",
             "PState 3"
           ],
-          "id": "item-281c9249"
+          "id": "item-b5e4e62c"
         },
         {
           "type": "item",
@@ -3035,7 +3035,7 @@
             "PState 3",
             "PState 4"
           ],
-          "id": "item-bed087b1"
+          "id": "item-3fa4b9c6"
         },
         {
           "type": "item",
@@ -3049,7 +3049,7 @@
             "PState 4",
             "PState 5"
           ],
-          "id": "item-52bb2379"
+          "id": "item-fa6befaa"
         },
         {
           "type": "item",
@@ -3064,7 +3064,7 @@
             "PState 5",
             "PState 6"
           ],
-          "id": "item-9e633ce8"
+          "id": "item-6f794aa9"
         },
         {
           "type": "item",
@@ -3080,7 +3080,7 @@
             "PState 6",
             "PState 7"
           ],
-          "id": "item-0bf2f95b"
+          "id": "item-0a200005"
         },
         {
           "type": "item",
@@ -3090,7 +3090,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-de5a1b7c"
+          "id": "item-1043682b"
         },
         {
           "type": "item",
@@ -3100,7 +3100,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-2b001861"
+          "id": "item-908d19ac"
         },
         {
           "type": "item",
@@ -3110,7 +3110,7 @@
             "Disabled",
             "Auto"
           ],
-          "id": "item-38edbc7d"
+          "id": "item-9773d0cf"
         },
         {
           "type": "item",
@@ -3120,7 +3120,7 @@
             "Automatic mode",
             "One Compute Unit"
           ],
-          "id": "item-5706410e"
+          "id": "item-f988d89c"
         },
         {
           "type": "item",
@@ -3132,7 +3132,7 @@
             "Six cores per processor",
             "Automatic mode"
           ],
-          "id": "item-37b6b58d"
+          "id": "item-959bb976"
         },
         {
           "type": "item",
@@ -3143,7 +3143,7 @@
             "Four cores per processor",
             "Automatic mode"
           ],
-          "id": "item-2cb67188"
+          "id": "item-31b9adda"
         },
         {
           "type": "item",
@@ -3153,7 +3153,7 @@
             "Two cores per processor",
             "Automatic mode"
           ],
-          "id": "item-ff7aa93d"
+          "id": "item-c42ba441"
         },
         {
           "type": "item",
@@ -3163,7 +3163,7 @@
             "Two cores per processor",
             "Automatic mode"
           ],
-          "id": "item-a9cb9a6a"
+          "id": "item-633218f4"
         },
         {
           "type": "item",
@@ -3179,7 +3179,7 @@
             "SEVEN",
             "Automatic mode"
           ],
-          "id": "item-64a4c519"
+          "id": "item-60fea6ad"
         },
         {
           "type": "item",
@@ -3195,7 +3195,7 @@
             "SEVEN",
             "Automatic mode"
           ],
-          "id": "item-18c820e1"
+          "id": "item-a6447618"
         },
         {
           "type": "item",
@@ -3207,7 +3207,7 @@
             "THREE",
             "Automatic mode"
           ],
-          "id": "item-b5bd4ae6"
+          "id": "item-2c2db7a1"
         },
         {
           "type": "item",
@@ -3217,7 +3217,7 @@
             "Auto",
             "1 CCD"
           ],
-          "id": "item-af638f87"
+          "id": "item-6fb3668a"
         }
       ]
     },
@@ -3252,7 +3252,7 @@
             "Suspend Disabled",
             "S3 (Suspend to RAM)"
           ],
-          "id": "item-80161326"
+          "id": "item-6fce78c1"
         }
       ]
     },
@@ -3362,7 +3362,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-5a8c1bb8"
+          "id": "item-5ad97e20"
         },
         {
           "type": "item",
@@ -3373,7 +3373,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-bee3e5b0"
+          "id": "item-342788a4"
         }
       ]
     },
@@ -3439,7 +3439,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-0d7d0b98"
+          "id": "item-4620c72c"
         },
         {
           "type": "item",
@@ -3450,7 +3450,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-14cbbd62"
+          "id": "item-1e7c6352"
         },
         {
           "type": "item",
@@ -3461,7 +3461,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-449bb1bb"
+          "id": "item-7b31f06b"
         },
         {
           "type": "item",
@@ -3472,7 +3472,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-70932b18"
+          "id": "item-4c4d4702"
         },
         {
           "type": "item",
@@ -3483,7 +3483,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-497edffa"
+          "id": "item-2f2d6508"
         },
         {
           "type": "item",
@@ -3494,7 +3494,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-073923b6"
+          "id": "item-3a67a6fb"
         },
         {
           "type": "item",
@@ -3505,7 +3505,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-53b7f9ad"
+          "id": "item-08015da9"
         },
         {
           "type": "item",
@@ -3516,7 +3516,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-51a5b8a1"
+          "id": "item-5bf5c646"
         },
         {
           "type": "item",
@@ -3527,7 +3527,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-f9214603"
+          "id": "item-5fe1fdde"
         },
         {
           "type": "item",
@@ -3538,7 +3538,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-3aca8dcd"
+          "id": "item-28edceaa"
         },
         {
           "type": "item",
@@ -3549,7 +3549,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-77d2033d"
+          "id": "item-4f64b7fb"
         },
         {
           "type": "item",
@@ -3560,7 +3560,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-3595ba02"
+          "id": "item-7764e767"
         },
         {
           "type": "item",
@@ -3571,7 +3571,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-ff1ad1a7"
+          "id": "item-a496a5ca"
         },
         {
           "type": "item",
@@ -3582,7 +3582,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-05d81c1f"
+          "id": "item-4e3a8e50"
         },
         {
           "type": "item",
@@ -3593,7 +3593,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-c01dcd8e"
+          "id": "item-e9d67b46"
         },
         {
           "type": "item",
@@ -3604,7 +3604,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-dfcabd68"
+          "id": "item-95d85143"
         },
         {
           "type": "item",
@@ -3615,7 +3615,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-f58fb142"
+          "id": "item-9ab202bc"
         },
         {
           "type": "item",
@@ -3626,7 +3626,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-b4748748"
+          "id": "item-034b0d06"
         }
       ]
     },
@@ -3642,7 +3642,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-17fbc2bc"
+          "id": "item-74f5bdd7"
         },
         {
           "type": "item",
@@ -3653,7 +3653,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-79a927b5"
+          "id": "item-e250888f"
         },
         {
           "type": "item",
@@ -3664,7 +3664,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-145fb661"
+          "id": "item-d2076c9f"
         },
         {
           "type": "item",
@@ -3675,7 +3675,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-d2447354"
+          "id": "item-3bcfa90d"
         },
         {
           "type": "item",
@@ -3686,7 +3686,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-2617179b"
+          "id": "item-73be4a6e"
         },
         {
           "type": "item",
@@ -3697,7 +3697,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-e5a43802"
+          "id": "item-e9e5b839"
         },
         {
           "type": "item",
@@ -3708,7 +3708,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-35d4d622"
+          "id": "item-6cbcfd6e"
         },
         {
           "type": "item",
@@ -3719,7 +3719,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-143fcdfc"
+          "id": "item-56553521"
         }
       ]
     },
@@ -3735,7 +3735,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-40b45d57"
+          "id": "item-05b50baf"
         },
         {
           "type": "item",
@@ -3746,7 +3746,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-9fb6370c"
+          "id": "item-a05f3a7a"
         },
         {
           "type": "item",
@@ -3757,7 +3757,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-23f8e6a0"
+          "id": "item-3c8d84b3"
         },
         {
           "type": "item",
@@ -3768,7 +3768,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-34e25004"
+          "id": "item-21eaaedf"
         },
         {
           "type": "item",
@@ -3779,7 +3779,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-ad18ab52"
+          "id": "item-dc6ca088"
         },
         {
           "type": "item",
@@ -3790,7 +3790,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-af58c877"
+          "id": "item-ba7eccd4"
         },
         {
           "type": "item",
@@ -3801,7 +3801,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-0d2316af"
+          "id": "item-13721dc3"
         },
         {
           "type": "item",
@@ -3812,7 +3812,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-43da2371"
+          "id": "item-2514d9fb"
         }
       ]
     },
@@ -3828,7 +3828,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-a6972a1e"
+          "id": "item-e4ee250e"
         },
         {
           "type": "item",
@@ -3839,7 +3839,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-aab74af2"
+          "id": "item-66e331b5"
         },
         {
           "type": "item",
@@ -3850,7 +3850,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-cec44b0f"
+          "id": "item-89fbad5e"
         },
         {
           "type": "item",
@@ -3861,7 +3861,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-0f3bd979"
+          "id": "item-deae20f6"
         },
         {
           "type": "item",
@@ -3872,7 +3872,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-07129752"
+          "id": "item-b4226aff"
         },
         {
           "type": "item",
@@ -3883,7 +3883,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-4c9a2af1"
+          "id": "item-cd5cb154"
         },
         {
           "type": "item",
@@ -3894,7 +3894,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-aa508f8b"
+          "id": "item-eff79521"
         },
         {
           "type": "item",
@@ -3905,7 +3905,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-c854a5e7"
+          "id": "item-e8157f3f"
         }
       ]
     },
@@ -3920,7 +3920,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-5f6999af"
+          "id": "item-0743e1ec"
         }
       ]
     },
@@ -3947,7 +3947,7 @@
             "HybridGraphics",
             "Enabled"
           ],
-          "id": "item-fb99d0fe"
+          "id": "item-966be99e"
         },
         {
           "type": "item",
@@ -3959,7 +3959,7 @@
             "PowerXpress",
             "HybridGraphics"
           ],
-          "id": "item-5a9f7896"
+          "id": "item-d8ab2134"
         },
         {
           "type": "item",
@@ -3969,7 +3969,7 @@
             "IGFX Video",
             "PCIE Video"
           ],
-          "id": "item-7527ebf4"
+          "id": "item-3a670611"
         },
         {
           "type": "item",
@@ -3992,7 +3992,7 @@
             "8G",
             "16G"
           ],
-          "id": "item-f504caba"
+          "id": "item-cab6ee1d"
         }
       ]
     },
@@ -4007,7 +4007,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-06afa2a1"
+          "id": "item-631fda46"
         },
         {
           "type": "item",
@@ -4017,7 +4017,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-8cb353b9"
+          "id": "item-4ce3cea1"
         },
         {
           "type": "item",
@@ -4027,7 +4027,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-5ef1c83e"
+          "id": "item-7c3888a6"
         },
         {
           "type": "item",
@@ -4037,7 +4037,7 @@
             "AHCI",
             "RAID"
           ],
-          "id": "item-42ff8ea1"
+          "id": "item-bfae5854"
         },
         {
           "type": "item",
@@ -4047,7 +4047,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-6fe74bf3"
+          "id": "item-9fa4263e"
         },
         {
           "type": "item",
@@ -4057,7 +4057,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-bbd4b61e"
+          "id": "item-f68f9907"
         },
         {
           "type": "item",
@@ -4072,7 +4072,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-4cb01f39"
+          "id": "item-c8c89226"
         },
         {
           "type": "item",
@@ -4087,7 +4087,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-b30d974b"
+          "id": "item-9be93ac8"
         },
         {
           "type": "item",
@@ -4102,7 +4102,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-35cd1d41"
+          "id": "item-4400f175"
         },
         {
           "type": "item",
@@ -4117,7 +4117,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-31ccc646"
+          "id": "item-b5b96ec8"
         },
         {
           "type": "item",
@@ -4132,7 +4132,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-3b12c36a"
+          "id": "item-0de25a6e"
         },
         {
           "type": "item",
@@ -4147,7 +4147,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-13e55d34"
+          "id": "item-27af1da7"
         },
         {
           "type": "item",
@@ -4162,7 +4162,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-45f570a0"
+          "id": "item-f2afb543"
         },
         {
           "type": "item",
@@ -4177,7 +4177,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-a6c82a6a"
+          "id": "item-a64aa643"
         },
         {
           "type": "item",
@@ -4192,7 +4192,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-9ddfb26c"
+          "id": "item-1ede4e2d"
         },
         {
           "type": "item",
@@ -4207,7 +4207,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-65a2706b"
+          "id": "item-09f01e0c"
         }
       ]
     },
@@ -4223,7 +4223,7 @@
             "Enable(S4+S5)",
             "Enable(S5)"
           ],
-          "id": "item-7a959535"
+          "id": "item-436cd5f2"
         },
         {
           "type": "item",
@@ -4233,7 +4233,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-3d5e2aed"
+          "id": "item-1f4a49aa"
         },
         {
           "type": "item",
@@ -4243,7 +4243,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-574aec6f"
+          "id": "item-3a5f81b2"
         },
         {
           "type": "item",
@@ -4254,7 +4254,7 @@
             "Power Off",
             "Last State"
           ],
-          "id": "item-b05bdd71"
+          "id": "item-f6369820"
         },
         {
           "type": "item",
@@ -4266,7 +4266,7 @@
             "Ctrl-Esc",
             "Power Key"
           ],
-          "id": "item-da405773"
+          "id": "item-903b29ce"
         },
         {
           "type": "item",
@@ -4276,7 +4276,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-76a96034"
+          "id": "item-e77e8cc2"
         },
         {
           "type": "item",
@@ -4286,7 +4286,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-535e7409"
+          "id": "item-6b4f66d3"
         },
         {
           "type": "item",
@@ -4296,7 +4296,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-cdaf049f"
+          "id": "item-f7874c01"
         },
         {
           "type": "item",
@@ -4306,7 +4306,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-5ef4a92e"
+          "id": "item-1596ad67"
         },
         {
           "type": "item",
@@ -4316,7 +4316,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-e4e1be9d"
+          "id": "item-bf0a5203"
         }
       ]
     },
@@ -4331,7 +4331,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-1391f0ee"
+          "id": "item-ea4c3bac"
         },
         {
           "type": "item",
@@ -4341,7 +4341,7 @@
             "HD Audio",
             "AC97"
           ],
-          "id": "item-771a3c7e"
+          "id": "item-1e16ebce"
         },
         {
           "type": "item",
@@ -4351,7 +4351,7 @@
             "SPDIF",
             "HDMI"
           ],
-          "id": "item-4219d53f"
+          "id": "item-938cd38c"
         },
         {
           "type": "item",
@@ -4361,7 +4361,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-304f7584"
+          "id": "item-5e5fb0c9"
         },
         {
           "type": "item",
@@ -4371,7 +4371,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-39aeea09"
+          "id": "item-0ca29247"
         },
         {
           "type": "item",
@@ -4384,7 +4384,7 @@
             "GEN 3",
             "GEN 4"
           ],
-          "id": "item-3e35e17b"
+          "id": "item-17705611"
         },
         {
           "type": "item",
@@ -4397,7 +4397,7 @@
             "GEN 3",
             "GEN 4"
           ],
-          "id": "item-7ebf33f6"
+          "id": "item-3303f153"
         },
         {
           "type": "item",
@@ -4409,7 +4409,7 @@
             "GEN 2",
             "GEN 3"
           ],
-          "id": "item-18139470"
+          "id": "item-f4676fd8"
         },
         {
           "type": "item",
@@ -4421,7 +4421,7 @@
             "GEN 2",
             "GEN 3"
           ],
-          "id": "item-f3c93656"
+          "id": "item-c7891e35"
         },
         {
           "type": "item",
@@ -4433,7 +4433,7 @@
             "GEN 2",
             "GEN 3"
           ],
-          "id": "item-f4d794fa"
+          "id": "item-526acf7c"
         },
         {
           "type": "item",
@@ -4445,7 +4445,7 @@
             "GEN 2",
             "GEN 3"
           ],
-          "id": "item-2fd8f4a2"
+          "id": "item-85254ba0"
         },
         {
           "type": "item",
@@ -4457,7 +4457,7 @@
             "GEN 2",
             "GEN 3"
           ],
-          "id": "item-78664b2d"
+          "id": "item-34ff9354"
         },
         {
           "type": "item",
@@ -4469,7 +4469,7 @@
             "GEN 2",
             "GEN 3"
           ],
-          "id": "item-fd37edcc"
+          "id": "item-a7819dbb"
         },
         {
           "type": "item",
@@ -4481,7 +4481,7 @@
             "GEN 2",
             "GEN 3"
           ],
-          "id": "item-1be3e1dc"
+          "id": "item-0ea0ef19"
         },
         {
           "type": "item",
@@ -4493,7 +4493,7 @@
             "GEN 2",
             "GEN 3"
           ],
-          "id": "item-38d741e3"
+          "id": "item-93535f1a"
         },
         {
           "type": "item",
@@ -4505,7 +4505,7 @@
             "GEN 2",
             "GEN 3"
           ],
-          "id": "item-872be8d1"
+          "id": "item-d15b051c"
         },
         {
           "type": "item",
@@ -4517,7 +4517,7 @@
             "GEN 2",
             "GEN 3"
           ],
-          "id": "item-8fd33108"
+          "id": "item-e867796c"
         },
         {
           "type": "item",
@@ -4529,7 +4529,7 @@
             "GEN 2",
             "GEN 3"
           ],
-          "id": "item-e0344510"
+          "id": "item-ff21d347"
         },
         {
           "type": "item",
@@ -4539,7 +4539,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-c2e98cde"
+          "id": "item-26fed057"
         },
         {
           "type": "item",
@@ -4552,7 +4552,7 @@
             "L0s And L1 Entry",
             "Auto"
           ],
-          "id": "item-d48f7899"
+          "id": "item-cb95c10b"
         },
         {
           "type": "item",
@@ -4562,7 +4562,7 @@
             "Auto Mode",
             "PCIe RAID Mode"
           ],
-          "id": "item-c7cdeef1"
+          "id": "item-12b4b327"
         },
         {
           "type": "item",
@@ -4574,7 +4574,7 @@
             "X8/X4/X4 Mode",
             "PCIe RAID Mode"
           ],
-          "id": "item-cfba59b5"
+          "id": "item-71b119c1"
         },
         {
           "type": "item",
@@ -4585,7 +4585,7 @@
             "X8/X8 Mode",
             "PCIe RAID Mode"
           ],
-          "id": "item-b075c368"
+          "id": "item-b8cec378"
         },
         {
           "type": "item",
@@ -4596,7 +4596,7 @@
             "1X",
             "4X"
           ],
-          "id": "item-fd21ddb3"
+          "id": "item-af935f63"
         },
         {
           "type": "text",
@@ -4613,7 +4613,7 @@
             "Aura Only",
             "Aura Off"
           ],
-          "id": "item-c50ab2ab"
+          "id": "item-1fe40779"
         },
         {
           "type": "item",
@@ -4625,7 +4625,7 @@
             "Aura Only",
             "Aura Off"
           ],
-          "id": "item-db81e3c5"
+          "id": "item-6d8ae856"
         },
         {
           "type": "item",
@@ -4645,7 +4645,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-015a926f"
+          "id": "item-3ccf7292"
         }
       ]
     },
@@ -4669,7 +4669,7 @@
           "options": [
             "Unknown Device"
           ],
-          "id": "item-434ed9fb"
+          "id": "item-48680659"
         },
         {
           "type": "item",
@@ -4679,7 +4679,7 @@
             "Unknown Device",
             "Unknown Device"
           ],
-          "id": "item-572fbc51"
+          "id": "item-ef1d0590"
         },
         {
           "type": "item",
@@ -4690,7 +4690,7 @@
             "Unknown Device",
             "Unknown Device"
           ],
-          "id": "item-f5346723"
+          "id": "item-67b251fc"
         },
         {
           "type": "item",
@@ -4702,20 +4702,7 @@
             "Unknown Device",
             "Unknown Device"
           ],
-          "id": "item-af706599"
-        },
-        {
-          "type": "item",
-          "label": "Output Select",
-          "value": "Unknown Device",
-          "options": [
-            "Unknown Device",
-            "Unknown Device",
-            "Unknown Device",
-            "Unknown Device",
-            "Unknown Device"
-          ],
-          "id": "item-34040850"
+          "id": "item-ff801a5e"
         },
         {
           "type": "item",
@@ -4726,10 +4713,9 @@
             "Unknown Device",
             "Unknown Device",
             "Unknown Device",
-            "Unknown Device",
             "Unknown Device"
           ],
-          "id": "item-50fde572"
+          "id": "item-67c2bf1b"
         },
         {
           "type": "item",
@@ -4741,10 +4727,9 @@
             "Unknown Device",
             "Unknown Device",
             "Unknown Device",
-            "Unknown Device",
             "Unknown Device"
           ],
-          "id": "item-dae4bc60"
+          "id": "item-10692ebe"
         },
         {
           "type": "item",
@@ -4757,10 +4742,25 @@
             "Unknown Device",
             "Unknown Device",
             "Unknown Device",
+            "Unknown Device"
+          ],
+          "id": "item-df7cc07f"
+        },
+        {
+          "type": "item",
+          "label": "Output Select",
+          "value": "Unknown Device",
+          "options": [
+            "Unknown Device",
+            "Unknown Device",
+            "Unknown Device",
+            "Unknown Device",
+            "Unknown Device",
+            "Unknown Device",
             "Unknown Device",
             "Unknown Device"
           ],
-          "id": "item-40d12520"
+          "id": "item-1a8925d9"
         }
       ]
     },
@@ -4780,7 +4780,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-bed81b8d"
+          "id": "item-db35ad8b"
         },
         {
           "type": "item",
@@ -4790,7 +4790,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-c144abaf"
+          "id": "item-9ba272e8"
         }
       ]
     },
@@ -4821,7 +4821,7 @@
             "224 PCI Bus Clocks",
             "248 PCI Bus Clocks"
           ],
-          "id": "item-7b8322c4"
+          "id": "item-240f2219"
         },
         {
           "type": "item",
@@ -4837,7 +4837,7 @@
             "224 PCI Bus Clocks",
             "248 PCI Bus Clocks"
           ],
-          "id": "item-77cde3a0"
+          "id": "item-1cc06303"
         },
         {
           "type": "item",
@@ -4847,7 +4847,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-c6562d35"
+          "id": "item-84c5a8dd"
         },
         {
           "type": "item",
@@ -4857,7 +4857,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-04c66d77"
+          "id": "item-ebd84056"
         },
         {
           "type": "item",
@@ -4867,7 +4867,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-6e863da2"
+          "id": "item-32032fb3"
         },
         {
           "type": "item",
@@ -4877,7 +4877,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-9582d0ef"
+          "id": "item-842b1b2f"
         },
         {
           "type": "item",
@@ -4887,7 +4887,7 @@
             "Disabled",
             "Auto"
           ],
-          "id": "item-92b3fa22"
+          "id": "item-52f21137"
         },
         {
           "type": "item",
@@ -4897,7 +4897,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-cb129e0a"
+          "id": "item-abc00744"
         },
         {
           "type": "item",
@@ -4907,7 +4907,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-e8e1db02"
+          "id": "item-1ee8727d"
         },
         {
           "type": "item",
@@ -4917,7 +4917,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-ea8dae62"
+          "id": "item-80aa251c"
         }
       ]
     },
@@ -4937,7 +4937,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-46a35bdd"
+          "id": "item-70fa0ddf"
         },
         {
           "type": "item",
@@ -4947,7 +4947,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-de420098"
+          "id": "item-d5182710"
         },
         {
           "type": "item",
@@ -4957,7 +4957,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-a5a02f14"
+          "id": "item-5139fa83"
         },
         {
           "type": "item",
@@ -4972,7 +4972,7 @@
             "2048 Bytes",
             "4096 Bytes"
           ],
-          "id": "item-a5fabb2a"
+          "id": "item-4f6a0d73"
         },
         {
           "type": "item",
@@ -4987,7 +4987,7 @@
             "2048 Bytes",
             "4096 Bytes"
           ],
-          "id": "item-a1cbfa5b"
+          "id": "item-ad21c985"
         },
         {
           "type": "text",
@@ -5003,7 +5003,7 @@
             "Auto",
             "Force L0s"
           ],
-          "id": "item-2586a565"
+          "id": "item-d6286998"
         },
         {
           "type": "text",
@@ -5023,7 +5023,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-5de7a7d4"
+          "id": "item-1969295b"
         },
         {
           "type": "item",
@@ -5035,7 +5035,7 @@
             "3",
             "5"
           ],
-          "id": "item-60bb1f24"
+          "id": "item-d8ac5018"
         },
         {
           "type": "item",
@@ -5045,7 +5045,7 @@
             "Keep Link ON",
             "Disabled"
           ],
-          "id": "item-600f38c3"
+          "id": "item-8fee47c9"
         },
         {
           "type": "item",
@@ -5055,7 +5055,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-cadb99e5"
+          "id": "item-5c555721"
         }
       ]
     },
@@ -5075,7 +5075,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-e6544bc0"
+          "id": "item-82e1c17f"
         },
         {
           "type": "item",
@@ -5089,7 +5089,7 @@
             "4",
             "5"
           ],
-          "id": "item-6d29f13d"
+          "id": "item-b8ff32d7"
         },
         {
           "type": "item",
@@ -5102,7 +5102,7 @@
             "16 K",
             "32 K"
           ],
-          "id": "item-3e6163af"
+          "id": "item-4a9cbc7c"
         },
         {
           "type": "item",
@@ -5119,7 +5119,7 @@
             "64 M",
             "128 M"
           ],
-          "id": "item-59f397ed"
+          "id": "item-ce2d7066"
         },
         {
           "type": "item",
@@ -5136,7 +5136,7 @@
             "64 M",
             "128 M"
           ],
-          "id": "item-a876f74d"
+          "id": "item-96f2170b"
         },
         {
           "type": "item",
@@ -5159,7 +5159,7 @@
             "4 G",
             "8 G"
           ],
-          "id": "item-3308199a"
+          "id": "item-ba81b388"
         },
         {
           "type": "text",
@@ -5209,7 +5209,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-79cea38f"
+          "id": "item-d1b4e53b"
         },
         {
           "type": "item",
@@ -5220,7 +5220,7 @@
             "Disabled",
             "Auto"
           ],
-          "id": "item-37ad875b"
+          "id": "item-b4ce618f"
         },
         {
           "type": "item",
@@ -5230,7 +5230,7 @@
             "HiSpeed",
             "FullSpeed"
           ],
-          "id": "item-f9617318"
+          "id": "item-e05e02c4"
         },
         {
           "type": "item",
@@ -5240,7 +5240,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-1dfb5bf4"
+          "id": "item-91be4131"
         },
         {
           "type": "item",
@@ -5250,7 +5250,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-71d7ec8a"
+          "id": "item-ab5d844a"
         },
         {
           "type": "item",
@@ -5260,7 +5260,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-647300d7"
+          "id": "item-728bccf1"
         },
         {
           "type": "item",
@@ -5270,7 +5270,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-39b4e28a"
+          "id": "item-3b33a322"
         },
         {
           "type": "item",
@@ -5287,7 +5287,7 @@
             "10 sec",
             "20 sec"
           ],
-          "id": "item-8d4996a9"
+          "id": "item-2b2e816e"
         },
         {
           "type": "item",
@@ -5299,7 +5299,7 @@
             "30 sec",
             "40 sec"
           ],
-          "id": "item-5f6c3e88"
+          "id": "item-10f6c944"
         },
         {
           "type": "item",
@@ -5309,7 +5309,7 @@
             "Auto",
             "Manual"
           ],
-          "id": "item-a5f6e663"
+          "id": "item-ac647312"
         },
         {
           "type": "item",
@@ -5327,7 +5327,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-9913409e"
+          "id": "item-9197dfcb"
         },
         {
           "type": "item",
@@ -5340,7 +5340,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-701806fd"
+          "id": "item-d3a019f4"
         },
         {
           "type": "item",
@@ -5353,7 +5353,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-ac7a132c"
+          "id": "item-c2e324d9"
         },
         {
           "type": "item",
@@ -5366,7 +5366,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-998fbf8f"
+          "id": "item-256a1f5d"
         },
         {
           "type": "item",
@@ -5379,7 +5379,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-49670a73"
+          "id": "item-70f38302"
         },
         {
           "type": "item",
@@ -5392,7 +5392,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-0966a89a"
+          "id": "item-385db5c1"
         },
         {
           "type": "item",
@@ -5405,7 +5405,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-0659bfe5"
+          "id": "item-7a5c303d"
         },
         {
           "type": "item",
@@ -5418,7 +5418,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-aac454cb"
+          "id": "item-13b8acfc"
         },
         {
           "type": "item",
@@ -5431,7 +5431,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-9add74a5"
+          "id": "item-f70464a0"
         },
         {
           "type": "item",
@@ -5444,7 +5444,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-aa66f667"
+          "id": "item-2cf8c87a"
         },
         {
           "type": "item",
@@ -5457,7 +5457,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-6e64b66a"
+          "id": "item-749c7fa1"
         },
         {
           "type": "item",
@@ -5470,7 +5470,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-f422d214"
+          "id": "item-a55593d2"
         },
         {
           "type": "item",
@@ -5483,7 +5483,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-4bcfbaf9"
+          "id": "item-1168a2a1"
         },
         {
           "type": "item",
@@ -5496,7 +5496,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-a9647731"
+          "id": "item-78ab1f37"
         },
         {
           "type": "item",
@@ -5509,7 +5509,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-08f027e5"
+          "id": "item-3d7618df"
         },
         {
           "type": "item",
@@ -5522,7 +5522,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-60392f3e"
+          "id": "item-08c8d791"
         },
         {
           "type": "item",
@@ -5535,7 +5535,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-84d03eb7"
+          "id": "item-4424c5d8"
         },
         {
           "type": "item",
@@ -5548,7 +5548,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-145a3269"
+          "id": "item-4abeb18d"
         },
         {
           "type": "item",
@@ -5561,7 +5561,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-396ff0c7"
+          "id": "item-ea1102bc"
         },
         {
           "type": "item",
@@ -5574,7 +5574,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-8c21f8e7"
+          "id": "item-0f1019a1"
         },
         {
           "type": "item",
@@ -5587,7 +5587,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-54161124"
+          "id": "item-dee7dbd1"
         },
         {
           "type": "item",
@@ -5600,7 +5600,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-3931c5ca"
+          "id": "item-30d62b70"
         },
         {
           "type": "item",
@@ -5613,7 +5613,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-6eb9c486"
+          "id": "item-a8e70f08"
         },
         {
           "type": "item",
@@ -5626,7 +5626,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-07dc24c3"
+          "id": "item-bfe47458"
         },
         {
           "type": "item",
@@ -5639,7 +5639,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-4895f665"
+          "id": "item-02697f19"
         },
         {
           "type": "item",
@@ -5652,7 +5652,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-cb6d85d0"
+          "id": "item-e96f4fb6"
         },
         {
           "type": "item",
@@ -5665,7 +5665,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-3e3b60ed"
+          "id": "item-39e87a90"
         },
         {
           "type": "item",
@@ -5678,7 +5678,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-7a5e5a10"
+          "id": "item-d94f82b1"
         },
         {
           "type": "item",
@@ -5691,7 +5691,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-f09b7828"
+          "id": "item-19297d19"
         },
         {
           "type": "item",
@@ -5704,7 +5704,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-04fa73e9"
+          "id": "item-2e963ded"
         },
         {
           "type": "item",
@@ -5717,7 +5717,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-dff4d8e2"
+          "id": "item-e3963581"
         },
         {
           "type": "item",
@@ -5730,7 +5730,7 @@
             "Hard Disk",
             "CD-ROM"
           ],
-          "id": "item-b99251ad"
+          "id": "item-14defc7c"
         },
         {
           "type": "item",
@@ -5745,7 +5745,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-20156ed0"
+          "id": "item-42052150"
         }
       ]
     },
@@ -5760,7 +5760,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-805e070d"
+          "id": "item-8f4ed021"
         },
         {
           "type": "item",
@@ -5770,7 +5770,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-e992d85a"
+          "id": "item-ffbfdb04"
         },
         {
           "type": "item",
@@ -5780,7 +5780,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-4dce9957"
+          "id": "item-292fd903"
         },
         {
           "type": "item",
@@ -5790,7 +5790,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-b7ff9680"
+          "id": "item-7a5fa255"
         },
         {
           "type": "item",
@@ -5800,7 +5800,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-e44a6364"
+          "id": "item-fccafe50"
         },
         {
           "type": "item",
@@ -5810,7 +5810,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-e0d37528"
+          "id": "item-bafa7880"
         },
         {
           "type": "item",
@@ -5820,7 +5820,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-2ecd2130"
+          "id": "item-afc8fdb7"
         },
         {
           "type": "item",
@@ -5830,7 +5830,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-9ce2e436"
+          "id": "item-3fc540a5"
         },
         {
           "type": "item",
@@ -5840,7 +5840,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-90a6e7f2"
+          "id": "item-74db1421"
         },
         {
           "type": "item",
@@ -5850,7 +5850,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-f2bb4801"
+          "id": "item-ae8dd111"
         },
         {
           "type": "item",
@@ -5860,7 +5860,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-28378555"
+          "id": "item-c7bc6da9"
         }
       ]
     },
@@ -5875,7 +5875,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-5dff9f92"
+          "id": "item-9a15eadb"
         },
         {
           "type": "item",
@@ -5885,7 +5885,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-ddd2f45d"
+          "id": "item-a20d20ff"
         },
         {
           "type": "item",
@@ -5895,7 +5895,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-c6f30f7c"
+          "id": "item-72b7fe4e"
         },
         {
           "type": "item",
@@ -5905,7 +5905,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-80d7e998"
+          "id": "item-019fa44b"
         },
         {
           "type": "item",
@@ -5915,7 +5915,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-7a70c22d"
+          "id": "item-2a0603ed"
         }
       ]
     },
@@ -5943,7 +5943,7 @@
             "N/A",
             "N/A"
           ],
-          "id": "item-c31d8de6"
+          "id": "item-d4534c0a"
         },
         {
           "type": "text",
@@ -6038,7 +6038,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-79928125"
+          "id": "item-d821611d"
         },
         {
           "type": "item",
@@ -6048,7 +6048,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-59a948dd"
+          "id": "item-18c31538"
         }
       ]
     },
@@ -6064,7 +6064,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-49b528f1"
+          "id": "item-69ba4f8c"
         },
         {
           "type": "item",
@@ -6075,7 +6075,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-3990e342"
+          "id": "item-8e1a9576"
         },
         {
           "type": "item",
@@ -6086,7 +6086,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-22aab204"
+          "id": "item-9a58ede9"
         },
         {
           "type": "item",
@@ -6097,7 +6097,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-0a565a76"
+          "id": "item-52deb48b"
         },
         {
           "type": "item",
@@ -6108,7 +6108,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-5e2e420c"
+          "id": "item-f894b344"
         },
         {
           "type": "item",
@@ -6119,7 +6119,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-ed1cbe83"
+          "id": "item-2eb0c1f3"
         },
         {
           "type": "item",
@@ -6130,7 +6130,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-bd115e6a"
+          "id": "item-997c6329"
         },
         {
           "type": "item",
@@ -6141,7 +6141,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-64e86c79"
+          "id": "item-fc2ed15a"
         },
         {
           "type": "item",
@@ -6152,7 +6152,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-2b2216b9"
+          "id": "item-4d393148"
         },
         {
           "type": "item",
@@ -6163,7 +6163,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-68c0be72"
+          "id": "item-7fae406b"
         },
         {
           "type": "item",
@@ -6174,7 +6174,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-437e386b"
+          "id": "item-8471ca0e"
         },
         {
           "type": "item",
@@ -6185,7 +6185,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-21ef3a7a"
+          "id": "item-7b8ee2d9"
         },
         {
           "type": "item",
@@ -6196,7 +6196,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-4b641fed"
+          "id": "item-689bc67f"
         },
         {
           "type": "item",
@@ -6207,7 +6207,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-55e80b56"
+          "id": "item-443f13e9"
         },
         {
           "type": "item",
@@ -6218,7 +6218,7 @@
             "Monitor",
             "N/A"
           ],
-          "id": "item-0e00a60f"
+          "id": "item-130e9a5b"
         },
         {
           "type": "item",
@@ -6255,7 +6255,7 @@
             "DC Mode",
             "PWM Mode"
           ],
-          "id": "item-f0e29ff7"
+          "id": "item-37371d1f"
         },
         {
           "type": "item",
@@ -6273,7 +6273,7 @@
             "12 sec",
             "25 sec"
           ],
-          "id": "item-505b7727"
+          "id": "item-0e03dec5"
         },
         {
           "type": "item",
@@ -6291,7 +6291,7 @@
             "12 sec",
             "25 sec"
           ],
-          "id": "item-e3c77f09"
+          "id": "item-d6d8e1ee"
         },
         {
           "type": "item",
@@ -6305,7 +6305,7 @@
             "500 RPM",
             "600 RPM"
           ],
-          "id": "item-c825aa72"
+          "id": "item-9ffb61c0"
         },
         {
           "type": "item",
@@ -6317,7 +6317,7 @@
             "Turbo",
             "Manual"
           ],
-          "id": "item-019c0ac4"
+          "id": "item-cacc81f0"
         },
         {
           "type": "item",
@@ -6339,7 +6339,7 @@
             "DC Mode",
             "PWM Mode"
           ],
-          "id": "item-f6ec63f2"
+          "id": "item-17dc292e"
         },
         {
           "type": "item",
@@ -6363,7 +6363,7 @@
             "EXT_Sensor3",
             "Multiple Sources"
           ],
-          "id": "item-a78fe279"
+          "id": "item-1b8168bf"
         },
         {
           "type": "item",
@@ -6386,7 +6386,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-402f0ac2"
+          "id": "item-a080ef86"
         },
         {
           "type": "item",
@@ -6410,7 +6410,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-6d509cd5"
+          "id": "item-2a870245"
         },
         {
           "type": "item",
@@ -6434,7 +6434,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-61c74b9d"
+          "id": "item-a55ae4df"
         },
         {
           "type": "item",
@@ -6443,7 +6443,7 @@
           "options": [
             "Manual"
           ],
-          "id": "item-6174c402"
+          "id": "item-799313f1"
         },
         {
           "type": "item",
@@ -6453,7 +6453,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-ff4b1544"
+          "id": "item-94f8bad6"
         }
       ]
     },
@@ -6475,7 +6475,7 @@
             "DC Mode",
             "PWM Mode"
           ],
-          "id": "item-3c6157b5"
+          "id": "item-8fae86fc"
         },
         {
           "type": "item",
@@ -6499,7 +6499,7 @@
             "EXT_Sensor3",
             "Multiple Sources"
           ],
-          "id": "item-f426dcb3"
+          "id": "item-e6073452"
         },
         {
           "type": "item",
@@ -6522,7 +6522,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-fa272b96"
+          "id": "item-aac2611a"
         },
         {
           "type": "item",
@@ -6546,7 +6546,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-d45c46a7"
+          "id": "item-adb88c2b"
         },
         {
           "type": "item",
@@ -6570,7 +6570,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-5449642d"
+          "id": "item-5a8e4e98"
         },
         {
           "type": "item",
@@ -6588,7 +6588,7 @@
             "178 sec",
             "204 sec"
           ],
-          "id": "item-5bba7c30"
+          "id": "item-5f90dcf1"
         },
         {
           "type": "item",
@@ -6606,7 +6606,7 @@
             "178 sec",
             "204 sec"
           ],
-          "id": "item-68f21eae"
+          "id": "item-c687a737"
         },
         {
           "type": "item",
@@ -6620,7 +6620,7 @@
             "500 RPM",
             "600 RPM"
           ],
-          "id": "item-bc818dc8"
+          "id": "item-d054646c"
         },
         {
           "type": "item",
@@ -6632,7 +6632,7 @@
             "Turbo",
             "Manual"
           ],
-          "id": "item-4cae1248"
+          "id": "item-4d96df95"
         },
         {
           "type": "item",
@@ -6642,7 +6642,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-8b9b9f6d"
+          "id": "item-3aec5347"
         },
         {
           "type": "item",
@@ -6659,7 +6659,7 @@
             "DC Mode",
             "PWM Mode"
           ],
-          "id": "item-2b774ca9"
+          "id": "item-218efecf"
         },
         {
           "type": "item",
@@ -6683,7 +6683,7 @@
             "EXT_Sensor3",
             "Multiple Sources"
           ],
-          "id": "item-44ef5ce3"
+          "id": "item-4609d4ab"
         },
         {
           "type": "item",
@@ -6706,7 +6706,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-39286077"
+          "id": "item-f1ea206d"
         },
         {
           "type": "item",
@@ -6730,7 +6730,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-d978b8d1"
+          "id": "item-051ab820"
         },
         {
           "type": "item",
@@ -6754,7 +6754,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-6277fc9a"
+          "id": "item-6a68eeb9"
         },
         {
           "type": "item",
@@ -6772,7 +6772,7 @@
             "178 sec",
             "204 sec"
           ],
-          "id": "item-c276bbc0"
+          "id": "item-da41bbab"
         },
         {
           "type": "item",
@@ -6790,7 +6790,7 @@
             "178 sec",
             "204 sec"
           ],
-          "id": "item-f3cbb668"
+          "id": "item-9b2fd36a"
         },
         {
           "type": "item",
@@ -6804,7 +6804,7 @@
             "500 RPM",
             "600 RPM"
           ],
-          "id": "item-a06a8fc0"
+          "id": "item-03bd2999"
         },
         {
           "type": "item",
@@ -6816,7 +6816,7 @@
             "Turbo",
             "Manual"
           ],
-          "id": "item-55138243"
+          "id": "item-7c5c01a9"
         },
         {
           "type": "item",
@@ -6826,7 +6826,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-f2e0cc7e"
+          "id": "item-944c9935"
         },
         {
           "type": "item",
@@ -6843,7 +6843,7 @@
             "DC Mode",
             "PWM Mode"
           ],
-          "id": "item-88974ab2"
+          "id": "item-55615d87"
         },
         {
           "type": "item",
@@ -6867,7 +6867,7 @@
             "EXT_Sensor3",
             "Multiple Sources"
           ],
-          "id": "item-49f93dff"
+          "id": "item-73bf89de"
         },
         {
           "type": "item",
@@ -6890,7 +6890,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-6f78f1fc"
+          "id": "item-60c7303e"
         },
         {
           "type": "item",
@@ -6914,7 +6914,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-444fb76d"
+          "id": "item-761e4638"
         },
         {
           "type": "item",
@@ -6938,7 +6938,7 @@
             "EXT_Sensor2",
             "EXT_Sensor3"
           ],
-          "id": "item-660ccb03"
+          "id": "item-bead31b2"
         },
         {
           "type": "item",
@@ -6956,7 +6956,7 @@
             "178 sec",
             "204 sec"
           ],
-          "id": "item-25cfe794"
+          "id": "item-be2b21c7"
         },
         {
           "type": "item",
@@ -6974,7 +6974,7 @@
             "178 sec",
             "204 sec"
           ],
-          "id": "item-84d67a51"
+          "id": "item-494744cd"
         },
         {
           "type": "item",
@@ -6988,7 +6988,7 @@
             "500 RPM",
             "600 RPM"
           ],
-          "id": "item-e699e1df"
+          "id": "item-9cc97588"
         },
         {
           "type": "item",
@@ -7000,7 +7000,7 @@
             "Turbo",
             "Manual"
           ],
-          "id": "item-726091d3"
+          "id": "item-e73633f3"
         },
         {
           "type": "item",
@@ -7010,7 +7010,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-699b6606"
+          "id": "item-d60d446d"
         }
       ]
     },
@@ -7039,7 +7039,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-d599532e"
+          "id": "item-ad41b87f"
         },
         {
           "type": "item",
@@ -7052,7 +7052,7 @@
             "Legacy IDE",
             "AHCI as ID 7804"
           ],
-          "id": "item-565edc54"
+          "id": "item-9a41864a"
         },
         {
           "type": "item",
@@ -7062,7 +7062,7 @@
             "RAID",
             "RAID5"
           ],
-          "id": "item-fb538b7a"
+          "id": "item-407a2ff2"
         }
       ]
     },
@@ -7078,7 +7078,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-ca3fedb6"
+          "id": "item-6edfe6d4"
         },
         {
           "type": "item",
@@ -7088,7 +7088,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-9bf46598"
+          "id": "item-e1a4436a"
         },
         {
           "type": "item",
@@ -7098,7 +7098,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-951dfb0d"
+          "id": "item-0b28e03e"
         },
         {
           "type": "item",
@@ -7108,7 +7108,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-f34df4a4"
+          "id": "item-26865852"
         },
         {
           "type": "item",
@@ -7118,7 +7118,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-8646f459"
+          "id": "item-b88ad035"
         },
         {
           "type": "item",
@@ -7129,7 +7129,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-af2c144f"
+          "id": "item-67e2344b"
         },
         {
           "type": "item",
@@ -7139,7 +7139,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-62c03d81"
+          "id": "item-f892279f"
         },
         {
           "type": "item",
@@ -7149,7 +7149,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-34409f51"
+          "id": "item-9e183147"
         },
         {
           "type": "item",
@@ -7159,7 +7159,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-19c7e5df"
+          "id": "item-5f98fb8a"
         },
         {
           "type": "item",
@@ -7169,7 +7169,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-a6b311d1"
+          "id": "item-a16d2eed"
         },
         {
           "type": "item",
@@ -7179,7 +7179,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-173dd21b"
+          "id": "item-abf58dd8"
         },
         {
           "type": "item",
@@ -7189,7 +7189,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-80877b06"
+          "id": "item-f4673592"
         }
       ]
     },
@@ -7204,7 +7204,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-7d66276f"
+          "id": "item-ae6a0150"
         },
         {
           "type": "item",
@@ -7214,7 +7214,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-c89c79c4"
+          "id": "item-d7595299"
         },
         {
           "type": "item",
@@ -7224,7 +7224,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-d5e68497"
+          "id": "item-eb82b698"
         },
         {
           "type": "item",
@@ -7234,7 +7234,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-73eb6097"
+          "id": "item-dd185284"
         }
       ]
     },
@@ -7249,7 +7249,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-6fde4637"
+          "id": "item-5f4195db"
         },
         {
           "type": "item",
@@ -7259,7 +7259,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-65c95be1"
+          "id": "item-1d84e9f9"
         },
         {
           "type": "item",
@@ -7269,7 +7269,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-f599a45b"
+          "id": "item-a5a50105"
         },
         {
           "type": "item",
@@ -7279,7 +7279,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-46ab14b8"
+          "id": "item-56912bde"
         },
         {
           "type": "item",
@@ -7289,7 +7289,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-5fb2a287"
+          "id": "item-63a01b81"
         },
         {
           "type": "item",
@@ -7299,7 +7299,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-0ba7cf8a"
+          "id": "item-5246125b"
         }
       ]
     },
@@ -7314,7 +7314,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-65ec92e6"
+          "id": "item-faf08d2b"
         },
         {
           "type": "item",
@@ -7324,7 +7324,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-0ce7da51"
+          "id": "item-ff3b123b"
         },
         {
           "type": "item",
@@ -7334,7 +7334,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-727138fb"
+          "id": "item-24cb06eb"
         },
         {
           "type": "item",
@@ -7344,7 +7344,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-71e21440"
+          "id": "item-f658087e"
         },
         {
           "type": "item",
@@ -7354,7 +7354,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-7c35d5c1"
+          "id": "item-2f365f51"
         },
         {
           "type": "item",
@@ -7364,7 +7364,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-783b0bf0"
+          "id": "item-37b00b4c"
         }
       ]
     },
@@ -7379,7 +7379,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-683e042b"
+          "id": "item-47b545c2"
         },
         {
           "type": "item",
@@ -7389,7 +7389,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-30fb5e28"
+          "id": "item-b08078b6"
         },
         {
           "type": "item",
@@ -7399,7 +7399,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-aaafe583"
+          "id": "item-36c34e59"
         },
         {
           "type": "item",
@@ -7409,7 +7409,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-11dad6f0"
+          "id": "item-cb14efdc"
         }
       ]
     },
@@ -7424,7 +7424,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-a40659c5"
+          "id": "item-bf5ddf5b"
         },
         {
           "type": "item",
@@ -7434,7 +7434,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-4244216a"
+          "id": "item-5254ba8c"
         },
         {
           "type": "item",
@@ -7444,7 +7444,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-2730ac75"
+          "id": "item-99f3388f"
         },
         {
           "type": "item",
@@ -7454,7 +7454,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-4a3998f4"
+          "id": "item-2e0e3ebe"
         }
       ]
     },
@@ -7471,7 +7471,7 @@
             "RX & TX1 Only",
             "RX"
           ],
-          "id": "item-5cb82753"
+          "id": "item-e72f8328"
         }
       ]
     },
@@ -7493,7 +7493,7 @@
             "Auto(Ver2.0+Low speed)",
             "Auto"
           ],
-          "id": "item-9f31df98"
+          "id": "item-d9254169"
         },
         {
           "type": "item",
@@ -7503,7 +7503,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-4e18aca8"
+          "id": "item-6914fb63"
         },
         {
           "type": "item",
@@ -7514,7 +7514,7 @@
             "DMA",
             "PIO"
           ],
-          "id": "item-05f937ff"
+          "id": "item-5eae9cec"
         }
       ]
     },
@@ -7529,7 +7529,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-ff6ec82e"
+          "id": "item-87fc7b19"
         },
         {
           "type": "item",
@@ -7539,7 +7539,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-c818784a"
+          "id": "item-256108d8"
         }
       ]
     },
@@ -7554,7 +7554,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-2c27a965"
+          "id": "item-2f7147ff"
         },
         {
           "type": "item",
@@ -7564,7 +7564,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-b336f011"
+          "id": "item-a0b14270"
         },
         {
           "type": "item",
@@ -7574,7 +7574,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-ec691ff0"
+          "id": "item-2432d31a"
         },
         {
           "type": "item",
@@ -7584,7 +7584,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-708594a7"
+          "id": "item-b3c80ef5"
         }
       ]
     },
@@ -7600,7 +7600,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-49cc19b9"
+          "id": "item-e33344b8"
         },
         {
           "type": "item",
@@ -7611,7 +7611,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-4cd0c62a"
+          "id": "item-74b20d6f"
         }
       ]
     },
@@ -7629,7 +7629,7 @@
             "Last State",
             "Auto"
           ],
-          "id": "item-df508aaf"
+          "id": "item-7415385e"
         },
         {
           "type": "item",
@@ -7639,7 +7639,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-193a0f79"
+          "id": "item-c9fa2320"
         }
       ]
     },
@@ -7654,7 +7654,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-d51df2d8"
+          "id": "item-4a9e29d1"
         },
         {
           "type": "item",
@@ -7664,7 +7664,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-b25c58fc"
+          "id": "item-0b419881"
         },
         {
           "type": "item",
@@ -7674,7 +7674,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-53db7723"
+          "id": "item-3f58ef37"
         },
         {
           "type": "item",
@@ -7684,7 +7684,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-6f3ebd93"
+          "id": "item-496ddf86"
         },
         {
           "type": "item",
@@ -7694,7 +7694,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-457ab7e9"
+          "id": "item-3db85ddd"
         },
         {
           "type": "item",
@@ -7704,7 +7704,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-fde17630"
+          "id": "item-91bc7a59"
         },
         {
           "type": "item",
@@ -7715,7 +7715,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-dca8ced7"
+          "id": "item-2f0a8841"
         },
         {
           "type": "item",
@@ -7726,7 +7726,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-eafb1e24"
+          "id": "item-35cee6a2"
         },
         {
           "type": "item",
@@ -7737,7 +7737,7 @@
             "Power Down",
             "Auto"
           ],
-          "id": "item-88201094"
+          "id": "item-f3a04316"
         },
         {
           "type": "item",
@@ -7748,7 +7748,7 @@
             "Power Down",
             "Auto"
           ],
-          "id": "item-8d387509"
+          "id": "item-b3d11b70"
         },
         {
           "type": "item",
@@ -7759,7 +7759,7 @@
             "Power Down",
             "Auto"
           ],
-          "id": "item-0374b491"
+          "id": "item-065a66f3"
         },
         {
           "type": "item",
@@ -7770,7 +7770,7 @@
             "Power Down",
             "Auto"
           ],
-          "id": "item-4fc34143"
+          "id": "item-0fbfa8e9"
         },
         {
           "type": "item",
@@ -7781,7 +7781,7 @@
             "Power Down",
             "Auto"
           ],
-          "id": "item-018e5851"
+          "id": "item-027d744f"
         },
         {
           "type": "item",
@@ -7792,7 +7792,7 @@
             "Power Down",
             "Auto"
           ],
-          "id": "item-e6775dfe"
+          "id": "item-c86820ef"
         },
         {
           "type": "item",
@@ -7803,7 +7803,7 @@
             "Power Down",
             "Auto"
           ],
-          "id": "item-772d7a68"
+          "id": "item-19836dff"
         },
         {
           "type": "item",
@@ -7814,7 +7814,7 @@
             "Power Down",
             "Auto"
           ],
-          "id": "item-4eed7d76"
+          "id": "item-77da9624"
         },
         {
           "type": "item",
@@ -7825,7 +7825,7 @@
             "GEN2",
             "Auto"
           ],
-          "id": "item-b8d50dd9"
+          "id": "item-e513407f"
         },
         {
           "type": "item",
@@ -7836,7 +7836,7 @@
             "GEN2",
             "Auto"
           ],
-          "id": "item-46e41842"
+          "id": "item-20c9c344"
         },
         {
           "type": "item",
@@ -7847,7 +7847,7 @@
             "GEN2",
             "Auto"
           ],
-          "id": "item-e1a20328"
+          "id": "item-645f1339"
         },
         {
           "type": "item",
@@ -7858,7 +7858,7 @@
             "GEN2",
             "Auto"
           ],
-          "id": "item-a6cb8f4c"
+          "id": "item-950bd632"
         },
         {
           "type": "item",
@@ -7869,7 +7869,7 @@
             "GEN2",
             "Auto"
           ],
-          "id": "item-46031b3b"
+          "id": "item-4acc8f12"
         },
         {
           "type": "item",
@@ -7880,7 +7880,7 @@
             "GEN2",
             "Auto"
           ],
-          "id": "item-bbdc0646"
+          "id": "item-d3a05d0b"
         },
         {
           "type": "item",
@@ -7891,7 +7891,7 @@
             "GEN2",
             "Auto"
           ],
-          "id": "item-e6ce0590"
+          "id": "item-fc9d075d"
         },
         {
           "type": "item",
@@ -7902,7 +7902,7 @@
             "GEN2",
             "Auto"
           ],
-          "id": "item-a7760208"
+          "id": "item-3580befe"
         },
         {
           "type": "item",
@@ -7913,7 +7913,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-ca6ffa68"
+          "id": "item-013bc71f"
         },
         {
           "type": "item",
@@ -7924,7 +7924,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-0f64fa5e"
+          "id": "item-ee369e37"
         },
         {
           "type": "item",
@@ -7935,7 +7935,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-28f9c866"
+          "id": "item-34379ddc"
         },
         {
           "type": "item",
@@ -7946,7 +7946,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-0f83c5dd"
+          "id": "item-bd797964"
         },
         {
           "type": "item",
@@ -7958,7 +7958,7 @@
             "INT 100MHz",
             "Auto"
           ],
-          "id": "item-ad28a576"
+          "id": "item-29aa728c"
         },
         {
           "type": "item",
@@ -7969,7 +7969,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-f2f1a980"
+          "id": "item-aee98871"
         },
         {
           "type": "item",
@@ -7980,7 +7980,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-1f60f14f"
+          "id": "item-bac88940"
         },
         {
           "type": "item",
@@ -7991,7 +7991,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-07fd8d1b"
+          "id": "item-40ee9c3d"
         },
         {
           "type": "item",
@@ -8002,7 +8002,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-2cbf2257"
+          "id": "item-d4ff4c3d"
         },
         {
           "type": "item",
@@ -8013,7 +8013,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-f2af3a1d"
+          "id": "item-fc359432"
         },
         {
           "type": "item",
@@ -8024,7 +8024,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-f12b826d"
+          "id": "item-452899c3"
         },
         {
           "type": "item",
@@ -8035,7 +8035,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-2cf6ebf7"
+          "id": "item-3b773e9f"
         },
         {
           "type": "item",
@@ -8046,7 +8046,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-94c78fd7"
+          "id": "item-800daa97"
         },
         {
           "type": "item",
@@ -8057,7 +8057,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-4c40cfb5"
+          "id": "item-85812bcc"
         },
         {
           "type": "item",
@@ -8068,7 +8068,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-dff0d745"
+          "id": "item-f091d9c2"
         },
         {
           "type": "item",
@@ -8079,7 +8079,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-5edc3e45"
+          "id": "item-1f530591"
         },
         {
           "type": "item",
@@ -8090,7 +8090,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-d2aeb623"
+          "id": "item-bcfae85b"
         },
         {
           "type": "item",
@@ -8100,7 +8100,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-8b83b5db"
+          "id": "item-59a6fafd"
         },
         {
           "type": "item",
@@ -8111,7 +8111,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-3cabb521"
+          "id": "item-42d60fb9"
         }
       ]
     },
@@ -8126,7 +8126,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-64bfb542"
+          "id": "item-03195558"
         },
         {
           "type": "item",
@@ -8136,7 +8136,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-1dafdcb2"
+          "id": "item-e97fb9ef"
         },
         {
           "type": "item",
@@ -8146,7 +8146,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-03e2b8c0"
+          "id": "item-2939f947"
         },
         {
           "type": "item",
@@ -8156,7 +8156,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-311af0e5"
+          "id": "item-f2d050cd"
         },
         {
           "type": "item",
@@ -8166,7 +8166,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-94ad7656"
+          "id": "item-c1917821"
         },
         {
           "type": "item",
@@ -8176,7 +8176,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-e0be5a41"
+          "id": "item-d44d20f4"
         }
       ]
     },
@@ -8197,7 +8197,7 @@
             "Default",
             "Auto"
           ],
-          "id": "item-d97abe90"
+          "id": "item-ba9c42f7"
         },
         {
           "type": "item",
@@ -8208,7 +8208,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-005f6abe"
+          "id": "item-cf249ab2"
         },
         {
           "type": "item",
@@ -8222,7 +8222,7 @@
             "16.5MHz",
             "Auto"
           ],
-          "id": "item-81c23460"
+          "id": "item-e2a01491"
         },
         {
           "type": "item",
@@ -8236,7 +8236,7 @@
             "Default",
             "Auto"
           ],
-          "id": "item-0bcbdad0"
+          "id": "item-1e79230f"
         },
         {
           "type": "item",
@@ -8247,7 +8247,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-13138016"
+          "id": "item-5095dbc6"
         }
       ]
     },
@@ -8263,7 +8263,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-76bc0381"
+          "id": "item-7233d7e3"
         },
         {
           "type": "item",
@@ -8274,7 +8274,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-9645b6d3"
+          "id": "item-1b4fe3c0"
         },
         {
           "type": "item",
@@ -8285,7 +8285,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-c33f2789"
+          "id": "item-dd400617"
         },
         {
           "type": "item",
@@ -8296,7 +8296,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-d1efd4fc"
+          "id": "item-bbfb0a74"
         },
         {
           "type": "item",
@@ -8307,7 +8307,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-a81cda09"
+          "id": "item-565715b6"
         },
         {
           "type": "item",
@@ -8318,7 +8318,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-311efe5f"
+          "id": "item-35aa0110"
         },
         {
           "type": "item",
@@ -8329,7 +8329,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-d1e7159c"
+          "id": "item-d5e2de9e"
         },
         {
           "type": "item",
@@ -8340,7 +8340,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-92937f81"
+          "id": "item-a9078090"
         },
         {
           "type": "item",
@@ -8351,7 +8351,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-d4532d2d"
+          "id": "item-e469a309"
         },
         {
           "type": "item",
@@ -8362,7 +8362,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-ab7698d5"
+          "id": "item-11b9b42c"
         },
         {
           "type": "item",
@@ -8373,7 +8373,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-70b34ec9"
+          "id": "item-8a6b1af3"
         },
         {
           "type": "item",
@@ -8384,7 +8384,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-af17c55e"
+          "id": "item-ed396963"
         },
         {
           "type": "item",
@@ -8395,7 +8395,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-dfbf87ac"
+          "id": "item-3902e42b"
         },
         {
           "type": "item",
@@ -8406,7 +8406,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-4cf24b59"
+          "id": "item-f5bc1a34"
         },
         {
           "type": "item",
@@ -8417,7 +8417,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-3d164f22"
+          "id": "item-4cdfb6fc"
         }
       ]
     },
@@ -8432,7 +8432,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-38db0070"
+          "id": "item-d319e08c"
         },
         {
           "type": "item",
@@ -8443,7 +8443,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-398ec8cc"
+          "id": "item-9227d310"
         },
         {
           "type": "item",
@@ -8457,7 +8457,7 @@
             "-0.450%",
             "-0.475%"
           ],
-          "id": "item-ebb7855b"
+          "id": "item-0b1cafdf"
         },
         {
           "type": "item",
@@ -8468,7 +8468,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-6d86fdfd"
+          "id": "item-0c01838b"
         },
         {
           "type": "item",
@@ -8479,7 +8479,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-25cd0f12"
+          "id": "item-10fe1e99"
         },
         {
           "type": "item",
@@ -8490,7 +8490,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-cc50a5f3"
+          "id": "item-271935d7"
         },
         {
           "type": "item",
@@ -8501,7 +8501,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-b7cf1a6d"
+          "id": "item-d0b2841e"
         },
         {
           "type": "item",
@@ -8512,7 +8512,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-f01fdf6a"
+          "id": "item-daa8ea43"
         },
         {
           "type": "item",
@@ -8523,7 +8523,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-230f87b4"
+          "id": "item-7fdf82fc"
         },
         {
           "type": "item",
@@ -8534,7 +8534,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-a5182dea"
+          "id": "item-e80d8aab"
         },
         {
           "type": "item",
@@ -8545,7 +8545,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-78e48f27"
+          "id": "item-610f058c"
         },
         {
           "type": "item",
@@ -8556,7 +8556,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-31de1cf1"
+          "id": "item-6b5f74ea"
         },
         {
           "type": "item",
@@ -8567,7 +8567,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-77356c4c"
+          "id": "item-37c23334"
         },
         {
           "type": "item",
@@ -8578,7 +8578,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-e1c7f4b0"
+          "id": "item-2c61612c"
         }
       ]
     },
@@ -8599,7 +8599,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-d78990d9"
+          "id": "item-b176f9d0"
         },
         {
           "type": "item",
@@ -8610,7 +8610,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-1a8f8cb6"
+          "id": "item-f6744e7d"
         },
         {
           "type": "item",
@@ -8621,7 +8621,7 @@
             "Enabled",
             "Auto"
           ],
-          "id": "item-5011ff11"
+          "id": "item-e364472a"
         },
         {
           "type": "item",
@@ -8632,7 +8632,7 @@
             "Force",
             "Auto"
           ],
-          "id": "item-d039f8b7"
+          "id": "item-59167552"
         },
         {
           "type": "item",
@@ -8646,7 +8646,7 @@
             "Power Saving",
             "Auto"
           ],
-          "id": "item-a4112195"
+          "id": "item-f70ef74e"
         }
       ]
     },
@@ -8670,7 +8670,7 @@
             "42bit (4TB)",
             "43bit (8TB)"
           ],
-          "id": "item-79863bdc"
+          "id": "item-a8d68d8e"
         },
         {
           "type": "text",
@@ -8735,7 +8735,7 @@
             "On",
             "Off"
           ],
-          "id": "item-24e29ffd"
+          "id": "item-82f3cc30"
         },
         {
           "type": "item",
@@ -8752,7 +8752,7 @@
           "label": "Boot Option #%d",
           "value": "Select...",
           "options": [],
-          "id": "item-9ae5d548"
+          "id": "item-6e60d824"
         },
         {
           "type": "item",
@@ -8772,7 +8772,7 @@
             "Last Boot SATA Devices Only",
             "All SATA Devices"
           ],
-          "id": "item-ccb48b3b"
+          "id": "item-b7cb412b"
         },
         {
           "type": "item",
@@ -8782,7 +8782,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-3862e864"
+          "id": "item-da4ce27d"
         },
         {
           "type": "item",
@@ -8792,7 +8792,7 @@
             "Auto",
             "EFI Driver"
           ],
-          "id": "item-53279ec3"
+          "id": "item-502be12f"
         },
         {
           "type": "item",
@@ -8803,7 +8803,7 @@
             "Full Initial",
             "Partial Initial"
           ],
-          "id": "item-cc946aaa"
+          "id": "item-22ceea71"
         },
         {
           "type": "item",
@@ -8813,7 +8813,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-ddaa9caf"
+          "id": "item-77420deb"
         },
         {
           "type": "item",
@@ -8823,7 +8823,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-d4f992ce"
+          "id": "item-7bf2fb64"
         },
         {
           "type": "item",
@@ -8833,7 +8833,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-50bb9437"
+          "id": "item-092beefc"
         },
         {
           "type": "text",
@@ -8845,7 +8845,7 @@
           "label": "Driver Option #%d",
           "value": "Select...",
           "options": [],
-          "id": "item-8ef70e3c"
+          "id": "item-e5903dff"
         }
       ]
     },
@@ -8857,7 +8857,7 @@
           "label": "Boot Option #%d",
           "value": "Select...",
           "options": [],
-          "id": "item-d8891258"
+          "id": "item-bf610f37"
         }
       ]
     },
@@ -8877,7 +8877,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-fa0886a7"
+          "id": "item-a5425864"
         },
         {
           "type": "item",
@@ -8887,7 +8887,7 @@
             "Normal Boot",
             "Fast Boot"
           ],
-          "id": "item-2f2d8fe3"
+          "id": "item-7b97bbaa"
         },
         {
           "type": "item",
@@ -8898,7 +8898,7 @@
             "Full Screen",
             "Disabled"
           ],
-          "id": "item-73567307"
+          "id": "item-f4355a4a"
         },
         {
           "type": "item",
@@ -8917,7 +8917,7 @@
             "9 sec",
             "10 sec"
           ],
-          "id": "item-81f2677f"
+          "id": "item-b36e486e"
         },
         {
           "type": "item",
@@ -8936,7 +8936,7 @@
             "10 sec",
             "Until Press ESC"
           ],
-          "id": "item-f628df22"
+          "id": "item-2063e2b9"
         },
         {
           "type": "item",
@@ -8946,7 +8946,7 @@
             "On",
             "Off"
           ],
-          "id": "item-1156a3b1"
+          "id": "item-eb9948aa"
         },
         {
           "type": "item",
@@ -8956,7 +8956,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-95e3dbd1"
+          "id": "item-d850f3e3"
         },
         {
           "type": "item",
@@ -8966,7 +8966,7 @@
             "Force BIOS",
             "Keep Current"
           ],
-          "id": "item-f4638c5c"
+          "id": "item-e6baf7c9"
         },
         {
           "type": "item",
@@ -8976,7 +8976,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-4e869f74"
+          "id": "item-be047c56"
         },
         {
           "type": "item",
@@ -8986,7 +8986,7 @@
             "Advanced Mode",
             "EZ Mode"
           ],
-          "id": "item-9bb826a2"
+          "id": "item-a7079d63"
         }
       ]
     },
@@ -9006,7 +9006,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-8573a03d"
+          "id": "item-41a9d597"
         },
         {
           "type": "item",
@@ -9021,7 +9021,7 @@
             "Upon Request",
             "Always"
           ],
-          "id": "item-9363df47"
+          "id": "item-da3cd00e"
         },
         {
           "type": "item",
@@ -9031,7 +9031,7 @@
             "Force BIOS",
             "Keep Current"
           ],
-          "id": "item-bd447f46"
+          "id": "item-de188aeb"
         },
         {
           "type": "item",
@@ -9041,7 +9041,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-ce6ce21d"
+          "id": "item-20630930"
         },
         {
           "type": "item",
@@ -9051,7 +9051,7 @@
             "Adjust",
             "Keep"
           ],
-          "id": "item-df5c8d02"
+          "id": "item-44e59b44"
         },
         {
           "type": "item",
@@ -9062,7 +9062,7 @@
             "Legacy OPROM only",
             "UEFI only"
           ],
-          "id": "item-deb7ec9b"
+          "id": "item-3dd74232"
         },
         {
           "type": "text",
@@ -9078,7 +9078,7 @@
             "UEFI only",
             "Legacy only"
           ],
-          "id": "item-42f82e53"
+          "id": "item-945bc122"
         },
         {
           "type": "item",
@@ -9089,7 +9089,7 @@
             "UEFI only",
             "Legacy only"
           ],
-          "id": "item-abd2db4d"
+          "id": "item-275b3e4d"
         },
         {
           "type": "item",
@@ -9100,7 +9100,7 @@
             "UEFI only",
             "Legacy only"
           ],
-          "id": "item-e21b639d"
+          "id": "item-24279cba"
         },
         {
           "type": "item",
@@ -9111,7 +9111,7 @@
             "UEFI only",
             "Legacy only"
           ],
-          "id": "item-bbf40ef5"
+          "id": "item-87e0fa54"
         }
       ]
     },
@@ -9146,7 +9146,7 @@
             "Other OS",
             "Windows UEFI mode"
           ],
-          "id": "item-26d36fba"
+          "id": "item-004b3ffb"
         },
         {
           "type": "item",
@@ -9166,7 +9166,7 @@
             "Standard",
             "Custom"
           ],
-          "id": "item-a53a2eeb"
+          "id": "item-74d90c0d"
         }
       ]
     },
@@ -9191,7 +9191,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-64afe13c"
+          "id": "item-61202d52"
         },
         {
           "type": "text",
@@ -9216,7 +9216,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-d8166de5"
+          "id": "item-5e573f65"
         },
         {
           "type": "item",
@@ -9226,7 +9226,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-7255998b"
+          "id": "item-7ec5117d"
         },
         {
           "type": "item",
@@ -9236,7 +9236,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-69c8876c"
+          "id": "item-b028daf2"
         },
         {
           "type": "item",
@@ -9246,7 +9246,7 @@
             "Normal",
             "Write Protect"
           ],
-          "id": "item-1ce21504"
+          "id": "item-17cca8b1"
         },
         {
           "type": "item",
@@ -9256,7 +9256,7 @@
             "Win10/Win8",
             "Win7/Other"
           ],
-          "id": "item-ba5f92fa"
+          "id": "item-3edff747"
         },
         {
           "type": "item",
@@ -9266,7 +9266,7 @@
             "Not Supported",
             "Supported"
           ],
-          "id": "item-ee2c402b"
+          "id": "item-b23ae8f7"
         },
         {
           "type": "item",
@@ -9276,7 +9276,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-f61e1e2f"
+          "id": "item-f51730ba"
         },
         {
           "type": "item",
@@ -9286,7 +9286,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-2340cfe2"
+          "id": "item-c9f62edd"
         },
         {
           "type": "item",
@@ -9296,7 +9296,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-99dd6f8e"
+          "id": "item-493a7456"
         }
       ]
     },
@@ -9311,7 +9311,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-2cecec50"
+          "id": "item-a3b69ce9"
         },
         {
           "type": "item",
@@ -9321,7 +9321,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-250cfd38"
+          "id": "item-381a429c"
         },
         {
           "type": "item",
@@ -9331,7 +9331,7 @@
             "Enabled",
             "Disabled"
           ],
-          "id": "item-6beabe09"
+          "id": "item-16e8f13d"
         },
         {
           "type": "item",
@@ -9341,7 +9341,7 @@
             "Advanced Mode",
             "EZ Mode"
           ],
-          "id": "item-6e204c14"
+          "id": "item-f08c82ee"
         },
         {
           "type": "item",
@@ -9353,7 +9353,7 @@
             "ASUS Optimal",
             "Customized"
           ],
-          "id": "item-b981d67b"
+          "id": "item-a98348d7"
         }
       ]
     },
@@ -9450,7 +9450,7 @@
             "DIMM_B1",
             "DIMM_B2"
           ],
-          "id": "item-49989562"
+          "id": "item-679ca316"
         },
         {
           "type": "item",
@@ -9524,7 +9524,7 @@
           "options": [
             "GPU 1"
           ],
-          "id": "item-70e04d62"
+          "id": "item-6064ef79"
         },
         {
           "type": "item",
@@ -9534,7 +9534,7 @@
             "GPU 1",
             "GPU 2"
           ],
-          "id": "item-9604f11b"
+          "id": "item-211880ff"
         },
         {
           "type": "item",
@@ -9545,7 +9545,7 @@
             "GPU 2",
             "GPU 3"
           ],
-          "id": "item-7323d6ae"
+          "id": "item-8d8be867"
         },
         {
           "type": "item",
@@ -9557,7 +9557,7 @@
             "GPU 3",
             "GPU 4"
           ],
-          "id": "item-b6c0459c"
+          "id": "item-72024154"
         },
         {
           "type": "item",
@@ -9570,7 +9570,7 @@
             "GPU 4",
             "GPU 5"
           ],
-          "id": "item-d6561736"
+          "id": "item-20fb0ff1"
         },
         {
           "type": "item",
@@ -9584,7 +9584,7 @@
             "GPU 5",
             "GPU 6"
           ],
-          "id": "item-f393d80b"
+          "id": "item-d5af9532"
         },
         {
           "type": "item",
@@ -9599,7 +9599,7 @@
             "GPU 6",
             "GPU 7"
           ],
-          "id": "item-6db15e15"
+          "id": "item-d2a93880"
         },
         {
           "type": "item",
@@ -9615,7 +9615,7 @@
             "GPU 7",
             "GPU 8"
           ],
-          "id": "item-ff9a1f8f"
+          "id": "item-432b8512"
         },
         {
           "type": "item",
@@ -9694,7 +9694,7 @@
             "Disabled",
             "Enabled"
           ],
-          "id": "item-e112cb3a"
+          "id": "item-f732b717"
         }
       ]
     },
